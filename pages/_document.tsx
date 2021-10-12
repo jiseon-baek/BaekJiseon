@@ -37,8 +37,14 @@ class MyDocument extends Document {
     return (
       <Html lang="ko">
         <Head> 
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+          />
         </Head>
         <body>
+          <script src="https://unpkg.com/aos@next/dist/aos.js" />
+          <script>AOS.init();</script>
           <Main />
           <NextScript />
         </body>

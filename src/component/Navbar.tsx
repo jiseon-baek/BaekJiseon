@@ -4,14 +4,14 @@ import styled from "styled-components";
 const NavbarContainer = styled.div`
   display:flex;
   justify-content: space-between;
-  padding:18px;
+  padding:16px;
   color:white;
 `;
 const Navgit = styled.div`
   	position: fixed;
 	top: 30px;
 	right: 30px;
-	font-size: 32px;
+	font-size: 30px;
 `;
 const Navlogo = styled.div`
   	position: fixed;

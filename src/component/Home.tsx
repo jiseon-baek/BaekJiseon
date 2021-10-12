@@ -1,5 +1,21 @@
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
 
-import styled, { keyframes } from 'styled-components'
+export default function Home() {
+	
+
+	
+	return (
+		<>
+		<Homeground >
+			<Homesvg src="/img/space.svg"></Homesvg>
+			<Homegreeting data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">Welcome To JS's Space <Homehand>👋🏻</Homehand><br/><Homespan>항상 도전하고 성장하는 Front-end 개발자 '백지선'입니다</Homespan></Homegreeting>
+		</Homeground>
+		
+		</>
+	)
+}
 
 const float4 = keyframes`
 	0% {
@@ -63,9 +79,9 @@ const Homesvg = styled.img`
 
 const Homegreeting = styled.h5`
 	font-size: 32px;
-	margin:auto 0;
-	animation: ${float4} 2s ease;
-	animation-fill-mode: forwards;
+	margin:10px 0;
+	//animation: ${float4} 2s ease;
+	//animation-fill-mode: forwards;
 `;
 
 const Homespan = styled.span`
@@ -82,20 +98,3 @@ const Homehand = styled.span`
 
 
 
-export default function Home() {
-	return (
-		<>
-		<Homeground>
-			<Homesvg src="/img/space.svg"></Homesvg>
-			<Homegreeting>Welcome To JS's Space <Homehand>👋🏻</Homehand><br/><Homespan>항상 도전하고 성장하는 Front-end 개발자 '백지선'입니다</Homespan></Homegreeting>
-		</Homeground>
-		
-			
-			
-			
-			
-			
-		
-		</>
-	)
-}
