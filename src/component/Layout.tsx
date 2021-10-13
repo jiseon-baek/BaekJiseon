@@ -18,7 +18,7 @@ const Layout: FC<Props> = ({children}) => {
 		<Navbar/>
 		<Home/>
 		<Aboutme/>
-		<Scroll/>
+		
 		<div>
 			{children}
 		</div>

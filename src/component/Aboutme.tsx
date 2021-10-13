@@ -5,10 +5,10 @@ export default function Aboutme() {
 	
 	const nice = {
 		position: 'relative' as 'relative',
-	top: '-30px',
-	right: '-80px',
-	width:'20px',
-	margin: '0 4px'
+		top: '-30px',
+		right: '-80px',
+		width:'20px',
+		margin: '0 4px'
 	}
 	return (
 		

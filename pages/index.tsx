@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Homeground from '../src/component/Home';
 
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   return (
     <>
-      <Head>
-        <title>JS | Portfolio</title>
-      </Head>
+      
       
       
     
