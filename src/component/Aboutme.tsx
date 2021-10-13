@@ -1,15 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import Img from 'next/image';
 
 export default function Aboutme() {
 	
-	const nice = {
-		position: 'relative' as 'relative',
-		top: '-30px',
-		right: '-80px',
-		width:'20px',
-		margin: '0 4px'
-	}
+	
 	return (
 		
 			<About>
@@ -32,9 +27,9 @@ export default function Aboutme() {
 					<DescriptionTop>
 						<DescriptionTopTextArea defaultValue='☺︎ Here are Skills I can use.'/>
 						
-							<img src="/img/nice1.svg" style={nice}></img>
-							<img src="/img/nice2.svg" style={nice}></img>
-						
+							<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
+							<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
+							
 					</DescriptionTop>
 					<AboutDescription>
 						<Description>
@@ -57,8 +52,8 @@ export default function Aboutme() {
 					<FadeDiv data-aos="fade-left">
 					<DescriptionTop>
 						<DescriptionTopTextArea defaultValue='☺︎ And other informations about me!'/>
-							<img src="/img/nice1.svg" style={nice}></img>
-							<img src="/img/nice2.svg" style={nice}></img>
+							<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
+							<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
 					</DescriptionTop>
 					<AboutDescription>
 						<Description>
@@ -87,6 +82,14 @@ export default function Aboutme() {
 			</About>
 	)
 }
+
+const Nice = styled.div`
+	width: 20%;
+	position: relative;
+	margin-left:87%;
+	margin-top:-4%;
+	
+`;
 
 const About = styled.section`
 	background-image: url(/img/home-bg.svg);

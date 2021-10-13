@@ -23,6 +23,24 @@ const Navlogo = styled.div`
 	transition: all 200ms ease;
 `;
 
+const NavScroll = styled.div`
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: 20px;
+	top:40%;
+	animation: fade 2s ease;
+`;
+
+const Dot = styled.div`
+	width: 11px;
+	height: 11px;
+	margin: 20px 0;
+	background-color: white;
+	transition: all 200ms ease;
+	
+`;
+
 export default function Navbar() {
 
 	return (
@@ -35,6 +53,12 @@ export default function Navbar() {
 			  </Navgit>
 			  
 			</NavbarContainer>
+			<NavScroll>
+				<Link href="/"><Dot></Dot></Link>
+				<Link href="/about"><Dot></Dot></Link>
+				<Link href="/project"><Dot></Dot></Link>
+				<Link href="/contact"><Dot></Dot></Link>
+			</NavScroll>
 
 			
 

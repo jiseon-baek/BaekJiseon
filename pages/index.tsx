@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Homeground from '../src/component/Home';
+
 
 
 export default function Home() {

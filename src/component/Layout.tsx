@@ -1,7 +1,7 @@
 import Navbar from './Navbar'
 import Home from './Home'
 import Aboutme from './Aboutme'
-import Scroll from './ScrollBar'
+import Projects from './Project'
 import Head from 'next/head'
 import React, { ReactChild, FC } from 'react'
 
@@ -18,8 +18,9 @@ const Layout: FC<Props> = ({children}) => {
 		<Navbar/>
 		<Home/>
 		<Aboutme/>
+		<Projects/>
 		
-		<div>
+		<div key={children.id}>
 			{children}
 		</div>
 		</>
