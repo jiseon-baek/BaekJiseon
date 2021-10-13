@@ -32,10 +32,11 @@ export default function Project() {
 	return (
     <>
 		<Projects>
-				<ProjectTop>
+				<ProjectTop data-aos="fade-down">
 					<Span><img src="http://niceghostclub.com/web/upload/5d679898f35f8975389c48e1_computer_explorer_cool.svg" style={{ width: '40px'}}></img>Projects</Span>
 				</ProjectTop>
 
+				<div data-aos="fade-up">
 				<ContainerTop>
 					<ContainerTopTextArea defaultValue='☺︎ Let Me Show You My Projects'/>
 					<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
@@ -54,6 +55,7 @@ export default function Project() {
 					</ContainerDiv>
 					))}
 				</Container>
+				</div>
 				
 	</Projects>
         </>

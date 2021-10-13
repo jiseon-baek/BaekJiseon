@@ -8,10 +8,10 @@ export default function Aboutme() {
 	return (
 		
 			<About>
-				<AboutTop>
+				<AboutTop data-aos="fade-down">
 						<TopAndSkillsSpan><img src="http://niceghostclub.com/web/upload/5d679898f35f8975389c48e1_computer_explorer_cool.svg" style={{ width: '40px'}}/>About Me</TopAndSkillsSpan>
 				</AboutTop>
-				<AboutMe data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+				<AboutMe data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
 					<AboutMeContent>
 						<h2>저는</h2>
 						<div className="content_top">
