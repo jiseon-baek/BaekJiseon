@@ -2,15 +2,12 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 export default function Home() {
-	
-
-	
 	return (
 		<>
 		<Homeground >
 			<Homesvg src="/img/space.svg"></Homesvg>
 			<Homegreeting data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">Welcome To JS's Space <Homehand>👋🏻</Homehand><br/><Homespan>항상 도전하고 성장하는 Front-end 개발자 '백지선'입니다</Homespan></Homegreeting>
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">Welcome To JS's Space <Homehand>👋🏻</Homehand><br/><Homespan>항상 도전하고 성장하는 Front-end 개발자 '백지선'입니다</Homespan></Homegreeting>
 		</Homeground>
 		
 		</>

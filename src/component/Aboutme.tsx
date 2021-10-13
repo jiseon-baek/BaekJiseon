@@ -1,10 +1,10 @@
-import React, { useEffect} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 export default function Aboutme() {
 	
 	const nice = {
-		position: 'relative',
+		position: 'relative' as 'relative',
 	top: '-30px',
 	right: '-80px',
 	width:'20px',
@@ -93,7 +93,7 @@ const About = styled.section`
 	width: 100%;
 	color: white;
 	text-align: center;
-	padding-top: 1%;
+	padding-top: 5%;
 	padding-bottom: 2%;
 `;
 const AboutTop = styled.div`
