@@ -34,17 +34,18 @@ const Navbar = () => {
 							top:'40%',color:'white'}}>
 				{scrollData.map((scroll) => {
 					return (
-						<li key={scroll.id} style={{}}>
-								<Link href={scroll.path}>
-									<a style={{width: '15px',
-										height: '15px',
-										margin: '20px 0',
-										transition: 'all 200ms ease',
-										backgroundColor: scroll.path == router.pathname ? 'hotpink' : 'white',
-										}}>
+						<li key={scroll.id} style={{
+							width: '15px',
+						height: '15px',
+						margin: '20px 0',
+						transition: 'all 200ms ease',
+						backgroundColor: scroll.path == router.pathname ? 'pink' : 'white',
+						listStyle: 'none'
+						}}
+						>
 								
-									</a>
-								</Link>
+									<Link href={scroll.path}><div style={{width:'15px', height:'15px'}}></div></Link>
+								
 
 						</li>
 						)
