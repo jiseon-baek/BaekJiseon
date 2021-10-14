@@ -5,14 +5,17 @@ export default function Home() {
 	return (
 		<>
 		<Homeground >
-			<Homesvg src="/img/space.svg"></Homesvg>
-			<Homegreeting data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">Welcome To JS's Space <Homehand>👋🏻</Homehand><br/><Homespan>항상 도전하고 성장하는 Front-end 개발자 '백지선'입니다</Homespan></Homegreeting>
+			<Homesvg data-aos="fade-up"
+     data-aos-duration="3000"><img src="/img/space.svg" style={{width:'400px'}}></img></Homesvg>
+			<Homegreeting data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="2000">Welcome To JS's Space <Homehand>👋🏻</Homehand><br/><Homespan>항상 도전하고 성장하는 Front-end 개발자 '백지선'입니다</Homespan></Homegreeting>
 		</Homeground>
 		
 		</>
 	)
 }
+
 
 const float4 = keyframes`
 	0% {
@@ -66,17 +69,21 @@ const Homeground = styled.div`
 	justify-content: center;
 	height: 100vh;
 	margin:0;
+
 `;
 
-const Homesvg = styled.img`
+const Homesvg = styled.div`
 	margin: 0 auto;
-	width:30%;
+	width:430px;
+	z-index: 100;
 	object-fit: cover;
+	
+	
 `;
 
 const Homegreeting = styled.h5`
 	font-size: 32px;
-	margin:10px 0;
+	margin:0;
 	//animation: ${float4} 2s ease;
 	//animation-fill-mode: forwards;
 `;

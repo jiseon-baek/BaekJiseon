@@ -1,7 +1,7 @@
 import React from 'react';
 import Img from 'next/image';
 import styled from 'styled-components';
-import imgStyle from '../../styles/Project.module.css';
+
 
 export default function Project() {
 	
@@ -40,7 +40,7 @@ export default function Project() {
 	src: '/img/pp2.png'
         },	
 	{ text: '프랜차이즈 홈페이지' , 
-        description: '지인의 프랜차이즈 홈페이지를 그누보드를 이용해 만들어주었습니다. 실제 서비스가 이뤄지는 홈페이지를 만드는 게 처음이었지만, php와 jquery의 기본에 대해 학습할 수 있었고 생소한 그누보드를 접해보았던 좋은 기회였습니다.', 
+        description: '삼촌의 부탁으로 3개의 프랜차이즈 홈페이지를 그누보드를 이용해 만들었습니다. 실제 서비스가 이뤄지는 홈페이지를 만드는 게 처음이었지만, php와 jquery의 기본에 대해 학습할 수 있었고 생소한 그누보드를 접해보았던 좋은 기회였습니다. 다음은 3개의 홈페이지 중 대표 1개입니다.', 
         skills: '사용기술: PHP, Jquery, 그누보드(tool)',
         link: 'http://www.makridan.co.kr',
         className: 'container_img project_four',
@@ -182,7 +182,7 @@ const ContainerDiv = styled.div`
     box-shadow: inset 0 1px 1px 0 #fff, inset -1px 0 1px 0 #656565;
     transition: all 200ms ease;
     &:hover {
-	transform: scale(1.04);
+	transform: scale(1.5);
 	color: rgb(222, 60, 87);
     }
 `;

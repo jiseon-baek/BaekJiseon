@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import styled from "styled-components";
 import { useRouter } from "next/router"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const scrollData = [
 	{ id: 'scroll1', name: 'Home', path: '/' },
@@ -24,7 +26,7 @@ const Navbar = () => {
 				<NavbarContainer>
 				<Link href="/"><Navlogo>JS</Navlogo></Link>
 				<Navgit>
-				<a href="https://github.com/jiseon-baek" className="nav_git">Github</a>
+				<Navgit href="https://github.com/jiseon-baek"><FontAwesomeIcon icon={faGithub}/></Navgit>
 				</Navgit>
 				
 				</NavbarContainer> 
@@ -68,11 +70,15 @@ const NavbarContainer = styled.div`
   color:white;
   
 `;
-const Navgit = styled.div`
+const Navgit = styled.a`
   	position: fixed;
 	top: 30px;
 	right: 30px;
 	font-size: 30px;
+	transition: all 200ms ease;
+	&:hover {
+		color: pink;
+	}
 `;
 const Navlogo = styled.a`
   	position: fixed;
@@ -83,6 +89,9 @@ const Navlogo = styled.a`
 	border-bottom: 2px solid white;
 	transition: all 200ms ease;
 	cursor: pointer;
+	&:hover {
+		color: pink;
+	}
 `;
 
 const NavScroll = styled.div`

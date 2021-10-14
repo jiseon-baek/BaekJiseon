@@ -1,14 +1,16 @@
 import React from 'react';
 
 import styled from 'styled-components'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 
 
 const Contact = () => {
 	const content = {
 		inform: [
-			{ title: 'Mail', address: 'js.coding.place@gmail.com' },
-			{ title: 'Phone', address: '010-8584-7752' }
+			{ title: 'Mail', address: 'js.coding.place@gmail.com', index:1 },
+			{ title: 'Phone', address: '010-8584-7752', index:2 }
 		]
 	}
 	const contactIcon = {
@@ -17,22 +19,22 @@ const Contact = () => {
 	}
 	return (
 		<>
-			<Contacts>
-				<div className="contact_container">
+			<Contacts >
+				<div className="contact_container" data-aos="flip-left" data-aos-duration="2800">
 					<ContactTitle>
 						<ContactTitleSpan><img src="http://niceghostclub.com/web/upload/search.png" style={contactIcon}></img>Contact</ContactTitleSpan>
 						
 					</ContactTitle>
 					<ContactDiv>
 						{content.inform.map((inform) => (
-							<ContactInform>
+							<ContactInform key={inform.index}>
 								<ContactInformH3>{inform.title}</ContactInformH3>
 								<ContactInformP>{inform.address}</ContactInformP>
 							</ContactInform>
 						))}
 						<ContactInform>
 							<ContactInformH3>Github</ContactInformH3>
-							<ContactGit href="https://github.com/jiseon-baek">Github</ContactGit>
+							<ContactGit href="https://github.com/jiseon-baek"><FontAwesomeIcon icon={faGithub}/></ContactGit>
 						</ContactInform>
 						
 

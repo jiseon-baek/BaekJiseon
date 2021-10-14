@@ -1,0 +1,76 @@
+@keyframes float {
+	0% {
+	  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+	  transform: translatey(30px);
+	}
+	50% {
+	  box-shadow: 0 25px 15px 0px rgb(0, 0, 0, 0.2);
+	  transform: translatex(-40px);
+	  
+	}
+	70%{
+		transform: translate(50px);
+	}
+	100% {
+	  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+	  transform: translatey(30px);
+	}
+      }
+
+@keyframes float2 {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgb(0, 0, 0, 0.2);
+		transform: translatey(20px);
+		
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float3 {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+		transform: scale(1);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgb(0, 0, 0, 0.2);
+		transform: scale(1.03);
+		
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+		transform: scale(1);
+	}
+}
+
+@keyframes float4 {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	100% {
+		
+		transform: translatey(-140px);
+	}
+}
+
+
+
+
+#spaceship {
+	animation: float 4s infinite;
+}
+
+#background {
+	animation: float2 4s infinite;
+}
+#moon {
+	animation: float3 4s infinite;
+}
+
