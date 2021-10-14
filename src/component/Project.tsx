@@ -45,7 +45,7 @@ export default function Project() {
 				<Container>
 
 					{projects.project.map((project)=> (
-					<ContainerDiv>
+					<ContainerDiv data-aos="zoom-out" data-aos-duration="1200" key={project.index}>
 						<h4>{project.text}</h4>
 						<DivDescription>{project.description}</DivDescription>
 						<p>{project.skills}</p>

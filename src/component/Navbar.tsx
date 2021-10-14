@@ -1,5 +1,63 @@
+import React from 'react';
 import Link from 'next/link';
 import styled from "styled-components";
+import { useRouter } from "next/router"
+
+const scrollData = [
+	{ id: 'scroll1', name: 'Home', path: '/' },
+	{ id: 'scroll2', name: 'Aboutme', path: '/about' },
+	{ id: 'scroll3', name: 'Projects', path: '/project' },
+	{ id: 'scroll4', name: 'Contact', path: '/contact' },
+]
+
+
+const Navbar = () => {
+	const router = useRouter();
+
+	
+
+	return (
+		
+			<>
+			<NavbarContainer>
+			  <Link href="/"><Navlogo>JS</Navlogo></Link>
+			  <Navgit>
+			  <a href="https://github.com/jiseon-baek" className="nav_git">Github</a>
+			  </Navgit>
+			  
+			</NavbarContainer>
+			<NavScroll> 
+				<ul style={{display: 'flex',
+							flexDirection: 'column',
+							position: 'fixed',
+							right: '20px',
+							top:'40%',color:'white'}}>
+				{scrollData.map((scroll) => {
+					return (
+						<li key={scroll.id} style={{}}>
+								<Link href={scroll.path}>
+									<a style={{width: '15px',
+										height: '15px',
+										margin: '20px 0',
+										transition: 'all 200ms ease',
+										backgroundColor: scroll.path == router.pathname ? 'hotpink' : 'white',
+										}}>
+								
+									</a>
+								</Link>
+
+						</li>
+						)
+				})}
+				</ul>
+			</NavScroll>
+
+			
+
+			</>
+		
+	)
+}
 
 const NavbarContainer = styled.div`
   display:flex;
@@ -13,7 +71,7 @@ const Navgit = styled.div`
 	right: 30px;
 	font-size: 30px;
 `;
-const Navlogo = styled.div`
+const Navlogo = styled.a`
   	position: fixed;
 	top: 30px;
 	left: 30px;
@@ -41,28 +99,4 @@ const Dot = styled.div`
 	
 `;
 
-export default function Navbar() {
-
-	return (
-		
-			<>
-			<NavbarContainer>
-			  <Link href=""><Navlogo>JS</Navlogo></Link>
-			  <Navgit>
-			  <a href="https://github.com/jiseon-baek" className="nav_git">Github</a>
-			  </Navgit>
-			  
-			</NavbarContainer>
-			<NavScroll>
-				<Link href="/"><Dot></Dot></Link>
-				<Link href="/about"><Dot></Dot></Link>
-				<Link href="/project"><Dot></Dot></Link>
-				<Link href="/contact"><Dot></Dot></Link>
-			</NavScroll>
-
-			
-
-			</>
-		
-	)
-}
+export default Navbar;
