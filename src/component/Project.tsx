@@ -5,6 +5,19 @@ import imgStyle from '../../styles/Project.module.css';
 
 export default function Project() {
 	
+	const IMG = {
+		cursor: 'pointer',
+	padding: '3px 4.6px 4.1px 4.1px',
+	backgroundSize: 'contain',
+	backgroundPosition: 'center',
+	backgroundRepeat: 'no-repeat',
+	height: '250px',
+    borderTop: '1px solid #707070',
+    borderRight: '1px solid #fff',
+    borderLeft: '1px solid #707070',
+    backgroundColor: '#6f6f6f',
+    boxShadow: 'inset -1px 0 1px 0 #b4b4b4, inset 0 -1px 1px 0 #000, inset 1px 1px 1px 0 #000',
+	}
 
 	const projects = {
 		project: [
@@ -14,7 +27,8 @@ export default function Project() {
         link: 'https://jiseon-baek.github.io/Js-s-SpacE/',
         className: 'container_img project_one',
         codeUrl: 'https://github.com/jiseon-baek/Personal-Portfolio',
-	index: 1
+	index: 1,
+	src: '/img/pp1.png'
         },
 			{ text: '🎵 Music Tag App' ,
         description: '음악을 추천하고 공유하는 React기반 Music 웹사이트입니다. CRUD 기능과 회원가입 및 로그인, 상세페이지 기능 등이 있습니다.', 
@@ -22,14 +36,16 @@ export default function Project() {
         link: 'https://music-tag-js100.netlify.app/posts',
         className: 'container_img project_two',
         codeUrl: 'https://github.com/jiseon-baek/Music-Tag-App',
-	index: 2
+	index: 2,
+	src: '/img/pp2.png'
         },	
 	{ text: '프랜차이즈 홈페이지' , 
         description: '지인의 프랜차이즈 홈페이지를 그누보드를 이용해 만들어주었습니다. 실제 서비스가 이뤄지는 홈페이지를 만드는 게 처음이었지만, php와 jquery의 기본에 대해 학습할 수 있었고 생소한 그누보드를 접해보았던 좋은 기회였습니다.', 
         skills: '사용기술: PHP, Jquery, 그누보드(tool)',
         link: 'http://www.makridan.co.kr',
         className: 'container_img project_four',
-	index: 3
+	index: 3,
+	src: '/img/pp3.png'
         }
 		]
 	}
@@ -54,7 +70,7 @@ export default function Project() {
 						<DivDescription>{project.description}</DivDescription>
 						<p>{project.skills}</p>
 						<p><ProjectLink href={project.codeUrl}>Github</ProjectLink></p>
-						<a href={project.link}><ContainerImg className={project.className}></ContainerImg></a>
+						<a href={project.link}><img src={project.src} style={IMG}></img></a>
 						
 					</ContainerDiv>
 					))}
