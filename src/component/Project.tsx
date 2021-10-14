@@ -12,20 +12,23 @@ export default function Project() {
         skills: '사용기술: React, NodeJS',
         link: 'https://jiseon-baek.github.io/Js-s-SpacE/',
         className: 'container_img project_one',
-        codeUrl: 'https://github.com/jiseon-baek/Personal-Portfolio'
+        codeUrl: 'https://github.com/jiseon-baek/Personal-Portfolio',
+	index: 1
         },
 			{ text: '🎵 Music Tag App' ,
         description: '음악을 추천하고 공유하는 React기반 Music 웹사이트입니다. CRUD 기능과 회원가입 및 로그인, 상세페이지 기능 등이 있습니다.', 
         skills: '사용기술: React + Redux, Node, Express, MongoDB',
         link: 'https://music-tag-js100.netlify.app/posts',
         className: 'container_img project_two',
-        codeUrl: 'https://github.com/jiseon-baek/Music-Tag-App'
+        codeUrl: 'https://github.com/jiseon-baek/Music-Tag-App',
+	index: 2
         },	
 	{ text: '프랜차이즈 홈페이지' , 
         description: '지인의 프랜차이즈 홈페이지를 그누보드를 이용해 만들어주었습니다. 실제 서비스가 이뤄지는 홈페이지를 만드는 게 처음이었지만, php와 jquery의 기본에 대해 학습할 수 있었고 생소한 그누보드를 접해보았던 좋은 기회였습니다.', 
         skills: '사용기술: PHP, Jquery, 그누보드(tool)',
         link: 'http://www.makridan.co.kr',
         className: 'container_img project_four',
+	index: 3
         }
 		]
 	}
