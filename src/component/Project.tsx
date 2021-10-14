@@ -1,6 +1,7 @@
 import React from 'react';
 import Img from 'next/image';
 import styled from 'styled-components';
+import imgStyle from '../../styles/Project.module.css';
 
 export default function Project() {
 	
@@ -82,15 +83,15 @@ const Projects = styled.section`
 	font-family: 'Lato', sans-serif;
 	object-fit: cover;
 	margin:0;
-	padding-top: 10%;
-	padding-bottom: 2%;
+	padding-top: 2%;
+	padding-bottom: 12%;
 `;
 
 const ProjectTop = styled.div`
 	display:flex;
 	width: 70%;
 	text-align: center;
-	margin: 5% auto;
+	margin: 0% auto;
 	background-color: rgb(206, 206, 206);
 	border-bottom: 1px solid #707070;
 	padding:3px;
@@ -164,6 +165,10 @@ const ContainerDiv = styled.div`
     background-color: #c9c9c9;
     box-shadow: inset 0 1px 1px 0 #fff, inset -1px 0 1px 0 #656565;
     transition: all 200ms ease;
+    &:hover {
+	transform: scale(1.04);
+	color: rgb(222, 60, 87);
+    }
 `;
 
 const DivDescription = styled.p`
@@ -184,6 +189,10 @@ const ProjectLink = styled.a`
 	text-decoration: none;
 	color: rgb(33, 33, 33);
 	border-bottom: 1px solid black;
+	&:hover {
+		color:   rgb(34, 96, 255);
+	border-bottom: 1px solid  rgb(34, 96, 255);
+	}
 `;
 
 const ContainerImg = styled.div`

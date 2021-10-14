@@ -96,8 +96,8 @@ const About = styled.section`
 	width: 100%;
 	color: white;
 	text-align: center;
-	padding-top: 5%;
-	padding-bottom: 2%;
+	padding-top: 2%;
+	padding-bottom: 12%;
 `;
 const AboutTop = styled.div`
 	display:flex;

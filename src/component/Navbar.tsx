@@ -18,15 +18,16 @@ const Navbar = () => {
 
 	return (
 		
-			<>
-			<NavbarContainer>
-			  <Link href="/"><Navlogo>JS</Navlogo></Link>
-			  <Navgit>
-			  <a href="https://github.com/jiseon-baek" className="nav_git">Github</a>
-			  </Navgit>
-			  
-			</NavbarContainer>
-			<NavScroll> 
+			<div>
+			
+			<NavScroll>
+				<NavbarContainer>
+				<Link href="/"><Navlogo>JS</Navlogo></Link>
+				<Navgit>
+				<a href="https://github.com/jiseon-baek" className="nav_git">Github</a>
+				</Navgit>
+				
+				</NavbarContainer> 
 				<ul style={{display: 'flex',
 							flexDirection: 'column',
 							position: 'fixed',
@@ -39,12 +40,13 @@ const Navbar = () => {
 						height: '15px',
 						margin: '20px 0',
 						transition: 'all 200ms ease',
-						backgroundColor: scroll.path == router.pathname ? 'pink' : 'white',
-						listStyle: 'none'
+						backgroundColor: scroll.path == router.pathname ? 'rgb(203, 51, 76)' : 'white',
+						listStyle: 'none',
+						cursor: 'pointer'
 						}}
 						>
 								
-									<Link href={scroll.path}><div style={{width:'15px', height:'15px'}}></div></Link>
+									<Link href={scroll.path}><div style={{width:'20px', height:'20px'}}></div></Link>
 								
 
 						</li>
@@ -55,7 +57,7 @@ const Navbar = () => {
 
 			
 
-			</>
+			</div>
 		
 	)
 }
@@ -63,8 +65,8 @@ const Navbar = () => {
 const NavbarContainer = styled.div`
   display:flex;
   justify-content: space-between;
-  padding:16px;
   color:white;
+  
 `;
 const Navgit = styled.div`
   	position: fixed;
@@ -80,6 +82,7 @@ const Navlogo = styled.a`
 	margin:0;
 	border-bottom: 2px solid white;
 	transition: all 200ms ease;
+	cursor: pointer;
 `;
 
 const NavScroll = styled.div`
@@ -89,6 +92,7 @@ const NavScroll = styled.div`
 	right: 20px;
 	top:40%;
 	animation: fade 2s ease;
+	z-index:100;
 `;
 
 const Dot = styled.div`
