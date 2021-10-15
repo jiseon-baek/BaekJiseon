@@ -14,18 +14,18 @@ const Contact = () => {
 		]
 	}
 	const contactIcon = {
-		width: '40px',
+		width: '50px',
 	margin: 'auto 0'
 	}
 	return (
 		<>
 			<Contacts >
-				<div className="contact_container" data-aos="flip-left" data-aos-duration="2800">
+				<ContactContainer data-aos="flip-left" data-aos-duration="2800" >
 					<ContactTitle>
 						<ContactTitleSpan><img src="http://niceghostclub.com/web/upload/search.png" style={contactIcon}></img>Contact</ContactTitleSpan>
 						
 					</ContactTitle>
-					<ContactDiv>
+					<ContactDiv className="p-10">
 						{content.inform.map((inform) => (
 							<ContactInform key={inform.index}>
 								<ContactInformH3>{inform.title}</ContactInformH3>
@@ -36,16 +36,36 @@ const Contact = () => {
 							<ContactInformH3>Github</ContactInformH3>
 							<ContactGit href="https://github.com/jiseon-baek"><FontAwesomeIcon icon={faGithub}/></ContactGit>
 						</ContactInform>
+						<EmailButton onClick={() => window.open('mailto:js.coding.place@gmail.com')}>
+							Sending Mail
+						</EmailButton>
 						
 
 					</ContactDiv>
-				</div>
+				</ContactContainer>
 				
 				
 			</Contacts>
 		</>
 	)
 }
+
+const EmailButton = styled.button`
+	font-family: 'Cafe24SsurroundAir';
+	font-weight: bold;
+	font-size:16px;
+	cursor: pointer;
+	border: none;
+	padding: 20px;
+	border-radius:20px;
+	transition: all 200ms ease;
+	background-color:#f0f0f0;
+	&:hover {
+		background-color: rgb(218, 56, 83);
+		color:white;
+		
+	}
+`;
 
 
 
@@ -55,6 +75,11 @@ const Contacts = styled.section`
 	height: 100vh;
 	padding-top:9%;
 	text-align: center;
+	
+`;
+
+const ContactContainer = styled.div`
+
 `;
 
 const ContactTitle = styled.div`
@@ -68,8 +93,10 @@ const ContactTitle = styled.div`
 `;
 
 const ContactTitleSpan = styled.span`
+display: flex;
+	justify-content: center;
 	font-size: 40px;
-	font-weight: bold;
+	
 	text-align: center;
 	animation: fade 500ms ease-in;
 	width: 40%;
@@ -87,18 +114,18 @@ const ContactDiv = styled.div`
 	background-color: white;
 	width: 70%;
 	margin: 0 auto;
-	padding: 13px;
+	
 	border-style: solid;
     border-width: 1px;
     border-color: #000 #fff #000 #000;
 `;
 
 const ContactInform = styled.div`
-width:50%;
+	width:50%;
 	color: rgb(34, 34, 34);
 	display: flex;
 	justify-content: space-between;
-	margin: 0 auto;
+	margin: 30px auto;
 `;
 
 const ContactGit = styled.a`

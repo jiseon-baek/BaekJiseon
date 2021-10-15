@@ -8,7 +8,7 @@ export default function Aboutme() {
 	return (
 		
 			<About>
-				<AboutTop data-aos="fade-down">
+				<AboutTop data-aos="fade-down" className="">
 						<TopAndSkillsSpan><img src="http://niceghostclub.com/web/upload/5d679898f35f8975389c48e1_computer_explorer_cool.svg" style={{ width: '40px'}}/>About Me</TopAndSkillsSpan>
 				</AboutTop>
 				<AboutMe data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
@@ -25,7 +25,7 @@ export default function Aboutme() {
 				<AboutSkills>
 					<FadeDiv data-aos="fade-right">
 					<DescriptionTop>
-						<DescriptionTopTextArea defaultValue='☺︎ Here are Skills I can use.'/>
+						<DescriptionTopTextArea defaultValue='☺︎ Here are Skills I can use.' className="font-mono text-black"/>
 						
 							<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
 							<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
@@ -37,11 +37,13 @@ export default function Aboutme() {
 							<DescriptionP>•Languages<br/><DescriptionSpan>HTML, CSS, Javascript ES5, ES6+</DescriptionSpan></DescriptionP>
 							<DescriptionP>•Framework + Library<br/><DescriptionSpan>React, Express, Jquery</DescriptionSpan></DescriptionP>
 							<DescriptionP>•Database<br/><DescriptionSpan>MySQL, MongoDB</DescriptionSpan></DescriptionP>
+							
 
 						</Description>
 						<Description>
 							<DescriptionH3>Other</DescriptionH3>
-							<DescriptionP>Figma<br/>Slack<br/>Vim</DescriptionP>
+							<DescriptionP>Figma<br/>Slack<br/>Vim<br/>Sourcetree</DescriptionP>
+							<DescriptionP>경험해 본 언어<br/><DescriptionSpan>Typescript, PHP</DescriptionSpan></DescriptionP>
 						</Description>
 						<p className="details"></p>
 						
@@ -51,7 +53,7 @@ export default function Aboutme() {
 
 					<FadeDiv data-aos="fade-left">
 					<DescriptionTop>
-						<DescriptionTopTextArea defaultValue='☺︎ And other informations about me!'/>
+						<DescriptionTopTextArea defaultValue='☺︎ And other informations about me!' className="font-mono text-black"/>
 							<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
 							<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
 					</DescriptionTop>
@@ -126,7 +128,7 @@ const AboutMeContent = styled.div`
 	justify-content: space-around;
 	padding: 0 10px;
     align-items: center;
-    font-size: 16px;
+    font-size: 18px;
     border-top: 1px none #707070;
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
@@ -135,11 +137,14 @@ const AboutMeContent = styled.div`
 `;
 
 const AboutMeContentSpan = styled.span`
-	color: rgb(36, 145, 128);
+	font-size:20px;
+	color: rgb(255, 124, 9);
 	font-weight: bold;
 `;
 
 const TopAndSkillsSpan = styled.span`
+	display: flex;
+	justify-content: center;
 	font-size: 38px;
 	font-weight: bold;
 	animation: fade 500ms ease-in;
@@ -228,10 +233,13 @@ const DescriptionP = styled.p`
     border-width: 1px;
 	border-color: #fff #000 #000 #fff;
     box-shadow: inset -1px -1px 1px 0 #707070;
+    &:hover span {
+	    color: rgb(203, 51, 76);
+    }
 `;
 
 const DescriptionSpan = styled.span`
-	font-size: 16px;
+	font-size: 18px;
 	background-color: transparent;
 	border: none;
 	box-shadow: none;

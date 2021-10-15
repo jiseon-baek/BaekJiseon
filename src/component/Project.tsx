@@ -38,14 +38,6 @@ export default function Project() {
         codeUrl: 'https://github.com/jiseon-baek/Music-Tag-App',
 	index: 2,
 	src: '/img/pp2.png'
-        },	
-	{ text: '프랜차이즈 홈페이지' , 
-        description: '삼촌의 부탁으로 3개의 프랜차이즈 홈페이지를 그누보드를 이용해 만들었습니다. 실제 서비스가 이뤄지는 홈페이지를 만드는 게 처음이었지만, php와 jquery의 기본에 대해 학습할 수 있었고 생소한 그누보드를 접해보았던 좋은 기회였습니다. 다음은 3개의 홈페이지 중 대표 1개입니다.', 
-        skills: '사용기술: PHP, Jquery, 그누보드(tool)',
-        link: 'http://www.makridan.co.kr',
-        className: 'container_img project_four',
-	index: 3,
-	src: '/img/pp3.png'
         }
 		]
 	}
@@ -58,7 +50,7 @@ export default function Project() {
 
 				<div data-aos="fade-up">
 				<ContainerTop>
-					<ContainerTopTextArea defaultValue='☺︎ Let Me Show You My Projects'/>
+					<ContainerTopTextArea defaultValue='☺︎ Let Me Show You My Projects' className="font-mono"/>
 					<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
 						<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
 				</ContainerTop>
@@ -69,11 +61,18 @@ export default function Project() {
 						<h4>{project.text}</h4>
 						<DivDescription>{project.description}</DivDescription>
 						<p>{project.skills}</p>
-						<p><ProjectLink href={project.codeUrl}>Github</ProjectLink></p>
-						<a href={project.link}><img src={project.src} style={IMG}></img></a>
+						<p><ProjectLink href={project.codeUrl}>Code: Github</ProjectLink></p>
+						<a href={project.link}><img src={project.src} style={IMG} title="링크로 이동하기"></img></a>
 						
 					</ContainerDiv>
 					))}
+					<ContainerDiv data-aos="zoom-out" data-aos-duration="1200">
+						<h4>프랜차이즈 홈페이지</h4>
+						<DivDescription>삼촌의 부탁으로 3개의 프랜차이즈 홈페이지를 그누보드를 이용해 만들었습니다. 실제 서비스가 이뤄지는 홈페이지를 만드는 게 처음이었지만, php와 jquery의 기본에 대해 학습할 수 있었고 생소한 그누보드와 ftp tool을 접해보았던 좋은 기회였습니다. 다음은 3개의 홈페이지 중 대표 1개입니다.</DivDescription>
+						<p>사용기술: PHP, Jquery, 그누보드(tool)</p>
+						<a href="http://www.makridan.co.kr"><img src="/img/pp3.png" style={IMG} title="링크로 이동하기"></img></a>
+						
+					</ContainerDiv>
 				</Container>
 				</div>
 				
@@ -114,6 +113,8 @@ const ProjectTop = styled.div`
 `;
 
 const Span = styled.span`
+display: flex;
+	justify-content: center;
 	font-size: 38px;
 	font-weight: bold;
 	animation: fade 500ms ease-in;
@@ -145,6 +146,7 @@ const ContainerTopTextArea = styled.textarea`
 	margin-top: 10px;
 	font-size: 16px;
 	resize: none;
+	color: #181818;
     border-top: 1px none #707070;
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
@@ -184,6 +186,13 @@ const ContainerDiv = styled.div`
     &:hover {
 	transform: scale(1.5);
 	color: rgb(222, 60, 87);
+    }
+    h4 {
+	    font-size: 20px;
+	    padding: 18px;
+    }
+    p { 
+	    margin: 12px;
     }
 `;
 

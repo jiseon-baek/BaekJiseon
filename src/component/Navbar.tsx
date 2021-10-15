@@ -45,6 +45,7 @@ const Navbar = () => {
 						backgroundColor: scroll.path == router.pathname ? 'rgb(203, 51, 76)' : 'white',
 						listStyle: 'none',
 						cursor: 'pointer'
+						
 						}}
 						>
 								
@@ -91,6 +92,7 @@ const Navlogo = styled.a`
 	cursor: pointer;
 	&:hover {
 		color: pink;
+		border-bottom-color: pink;
 	}
 `;
 
