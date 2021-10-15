@@ -1,29 +1,48 @@
 import React from 'react';
 import styled from 'styled-components';
 import Img from 'next/image';
+import { motion } from "framer-motion";
 
 export default function Aboutme() {
+	
+	const variants = {
+		initial : {
+			width: 0
+		},
+		animation : {
+			width: '1000px',
+			transition: {
+				duration: 0.4,
+				type: 'spring',
+				damping: 10,
+				stiffness:100
+			}
+		}
+	}
+
+	const variants2 = {
+		initial : {
+			opacity:0,
+			y: 60
+		},
+		animation : {
+			opacity:1,
+			y:0
+		}
+	}
+
 	
 	
 	return (
 		
 			<About>
-				<AboutTop data-aos="fade-down" className="">
+				
+				<AboutTop>
 						<TopAndSkillsSpan><img src="http://niceghostclub.com/web/upload/5d679898f35f8975389c48e1_computer_explorer_cool.svg" style={{ width: '40px'}}/>About Me</TopAndSkillsSpan>
 				</AboutTop>
-				<AboutMe data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
-					<AboutMeContent>
-						<h2>저는</h2>
-						<div className="content_top">
-							<p><AboutMeContentSpan>도전</AboutMeContentSpan>을 즐기는 개발자</p>
-							<p>끊임없이 <AboutMeContentSpan>공부</AboutMeContentSpan>하고 <AboutMeContentSpan>성장</AboutMeContentSpan>하는 개발자</p>
-							<p><AboutMeContentSpan>팀워크</AboutMeContentSpan>를 중시하는 개발자</p>
-						</div>
-						<h2>입니다</h2>
-					</AboutMeContent>
-				</AboutMe>
+				
 				<AboutSkills>
-					<FadeDiv data-aos="fade-right">
+					
 					<DescriptionTop>
 						<DescriptionTopTextArea defaultValue='☺︎ Here are Skills I can use.' className="font-mono text-black"/>
 						
@@ -31,54 +50,70 @@ export default function Aboutme() {
 							<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
 							
 					</DescriptionTop>
+					
 					<AboutDescription>
-						<Description>
-							<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Front-end</DescriptionH3>
-							<DescriptionP>•Languages<br/><DescriptionSpan>HTML, CSS, Javascript ES5, ES6+</DescriptionSpan></DescriptionP>
-							<DescriptionP>•Framework + Library<br/><DescriptionSpan>React, Express, Jquery</DescriptionSpan></DescriptionP>
-							<DescriptionP>•Database<br/><DescriptionSpan>MySQL, MongoDB</DescriptionSpan></DescriptionP>
-							
+						<motion.div variants={variants2} initial="initial" animate="animation" style={{display:'flex',
+	justifyContent: 'center', width:'100%'}}>
+							<Description>
+								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Front-end</DescriptionH3>
+								<DescriptionP>•Languages<br/><DescriptionSpan>HTML, CSS, Javascript ES5, ES6+</DescriptionSpan></DescriptionP>
+								<DescriptionP>•Framework + Library<br/><DescriptionSpan>React, Express, Jquery</DescriptionSpan></DescriptionP>
+								<DescriptionP>•Database<br/><DescriptionSpan>MySQL, MongoDB</DescriptionSpan></DescriptionP>
 
-						</Description>
-						<Description>
-							<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Other</DescriptionH3>
-							<DescriptionP>Figma<br/>Slack<br/>Vim<br/>Sourcetree</DescriptionP>
-							<DescriptionP>경험해 본 언어<br/><DescriptionSpan>Typescript, PHP</DescriptionSpan></DescriptionP>
-						</Description>
-						<p className="details"></p>
+							</Description>
+							<Description>
+								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Other</DescriptionH3>
+								<DescriptionP>Figma<br/>Slack<br/>Vim<br/>Sourcetree</DescriptionP>
+								<DescriptionP>경험해 본 언어<br/><DescriptionSpan>Typescript, PHP</DescriptionSpan></DescriptionP>
+							</Description>
+						</motion.div>
 						
 					</AboutDescription>
-					</FadeDiv>
+					
 
 
-					<FadeDiv data-aos="fade-left">
+				
 					<DescriptionTop>
 						<DescriptionTopTextArea defaultValue='☺︎ And other informations about me!' className="font-mono text-black"/>
 							<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
 							<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
 					</DescriptionTop>
 					<AboutDescription>
-						<Description>
-							<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Education</DescriptionH3>
-							
+						<motion.div variants={variants2} initial="initial" animate="animation" style={{display:'flex',
+		justifyContent: 'center', width:'100%'}}>
+							<Description>
+								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Education</DescriptionH3>
 								
-								<DescriptionP style={{ fontSize: '20px' }}>
-									<DescriptionSchool>
-										<img src="/img/school.png" style={{width: '60px', marginRight: '5px'}}/>
-										<div style={{ lineHeight: '30px'}}>
-										광운대학교 국제학부<br/>2016.03~2021.02
-										</div>
-									</DescriptionSchool>
-								</DescriptionP>
-							
-						</Description>
-						<Description>
-							<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Certificate</DescriptionH3>
-							<DescriptionP style={{ fontSize: '20px' }}>컴퓨터활용능력 1급<br/></DescriptionP>
-						</Description>
+									
+									<DescriptionP style={{ fontSize: '20px' }}>
+										<DescriptionSchool>
+											<img src="/img/school.png" style={{width: '60px', marginRight: '5px'}}/>
+											<div style={{ lineHeight: '30px'}} >
+											광운대학교 국제학부<br/>2016.03~2021.02
+											</div>
+										</DescriptionSchool>
+									</DescriptionP>
+								
+							</Description>
+							<Description>
+								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Certificate</DescriptionH3>
+								<DescriptionP style={{ fontSize: '20px' }}>컴퓨터활용능력 1급<br/></DescriptionP>
+							</Description>
+						</motion.div>
 					</AboutDescription>
-					</FadeDiv>
+					
 				</AboutSkills>
+				<AboutMe>
+					<AboutMeContent>
+						<h2>저는</h2>
+						<div className="content_top" >
+							<p><AboutMeContentSpan>도전</AboutMeContentSpan>을 즐기는 개발자</p>
+							<p>끊임없이 <AboutMeContentSpan>공부</AboutMeContentSpan>하고 <AboutMeContentSpan>성장</AboutMeContentSpan>하는 개발자</p>
+							<p><AboutMeContentSpan>팀워크</AboutMeContentSpan>를 중시하는 개발자</p>
+						</div>
+						<h2>입니다</h2>
+					</AboutMeContent>
+				</AboutMe>
 				
 				
 			</About>
@@ -114,7 +149,7 @@ const AboutTop = styled.div`
 const AboutMe = styled.div`
 	font-family: 'Cafe24SsurroundAir';
 	width: 80%;
-	margin: 5% auto 10px auto;
+	margin: 10px auto;
 	background-color: rgb(194, 194, 194);
 	color: rgb(34, 34, 34);
 	border-bottom: 1px solid #707070;
@@ -168,13 +203,13 @@ const TopAndSkillsSpan = styled.span`
 `;
 
 const AboutSkills = styled.div`
-
+	margin: 3% auto;
 `;
 
 const DescriptionTop = styled.div`
 	width: 80%;
 	height: 60px;
-	margin: 0 auto;
+	margin: 2% auto 0 auto;
 	background-color: rgb(181, 181, 181);
 	border-bottom: 1px solid #707070;
 `;
