@@ -126,7 +126,7 @@ const AboutMeContent = styled.div`
 	background-color:white;
 	display: flex;
 	justify-content: space-around;
-	padding: 0 10px;
+	padding: 20px 10px;
     align-items: center;
     font-size: 18px;
     border-top: 1px none #707070;
@@ -134,6 +134,12 @@ const AboutMeContent = styled.div`
     border-bottom: 1px solid #fff;
     background-color: #fff;
     box-shadow: inset 0 -1px 1px 0 #707070, inset -1px 0 1px 0 #707070, inset 1px 1px 1px 0 #707070;
+    h2 {
+	    font-size:24px;
+    }
+    p { 
+	    padding: 4px 0 ;
+    }
 `;
 
 const AboutMeContentSpan = styled.span`
