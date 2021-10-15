@@ -16,8 +16,6 @@ const scrollData = [
 const Navbar = () => {
 	const router = useRouter();
 
-	
-
 	return (
 		
 			<div>

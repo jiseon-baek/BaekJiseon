@@ -33,7 +33,7 @@ export default function Aboutme() {
 					</DescriptionTop>
 					<AboutDescription>
 						<Description>
-							<DescriptionH3>Front-end</DescriptionH3>
+							<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Front-end</DescriptionH3>
 							<DescriptionP>•Languages<br/><DescriptionSpan>HTML, CSS, Javascript ES5, ES6+</DescriptionSpan></DescriptionP>
 							<DescriptionP>•Framework + Library<br/><DescriptionSpan>React, Express, Jquery</DescriptionSpan></DescriptionP>
 							<DescriptionP>•Database<br/><DescriptionSpan>MySQL, MongoDB</DescriptionSpan></DescriptionP>
@@ -41,7 +41,7 @@ export default function Aboutme() {
 
 						</Description>
 						<Description>
-							<DescriptionH3>Other</DescriptionH3>
+							<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Other</DescriptionH3>
 							<DescriptionP>Figma<br/>Slack<br/>Vim<br/>Sourcetree</DescriptionP>
 							<DescriptionP>경험해 본 언어<br/><DescriptionSpan>Typescript, PHP</DescriptionSpan></DescriptionP>
 						</Description>
@@ -59,7 +59,7 @@ export default function Aboutme() {
 					</DescriptionTop>
 					<AboutDescription>
 						<Description>
-							<DescriptionH3>Education</DescriptionH3>
+							<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Education</DescriptionH3>
 							
 								
 								<DescriptionP style={{ fontSize: '20px' }}>
@@ -73,7 +73,7 @@ export default function Aboutme() {
 							
 						</Description>
 						<Description>
-							<DescriptionH3>Certificate</DescriptionH3>
+							<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Certificate</DescriptionH3>
 							<DescriptionP style={{ fontSize: '20px' }}>컴퓨터활용능력 1급<br/></DescriptionP>
 						</Description>
 					</AboutDescription>
