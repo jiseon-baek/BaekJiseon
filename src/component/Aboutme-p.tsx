@@ -7,23 +7,6 @@ import { fadeInUp } from '../../animations'
 
 export default function Aboutme() {
 	
-	const variants = {
-		initial : {
-			width: 0
-		},
-		animation : {
-			width: '1000px',
-			transition: {
-				duration: 0.4,
-				type: 'spring',
-				damping: 10,
-				stiffness:100
-			}
-		}
-	}
-
-	
-
 	
 	
 	return (
@@ -31,7 +14,7 @@ export default function Aboutme() {
 			<About>
 				
 				<AboutTop>
-						<TopAndSkillsSpan><img src="http://niceghostclub.com/web/upload/5d679898f35f8975389c48e1_computer_explorer_cool.svg" style={{ width: '40px'}}/>About Me</TopAndSkillsSpan>
+						<TopAndSkillsSpan><img src="http://niceghostclub.com/web/upload/5d679898f35f8975389c48e1_computer_explorer_cool.svg" style={{ width: '40px'}}/>About Me: Characters</TopAndSkillsSpan>
 				</AboutTop>
 				
 				<AboutSkills>
@@ -179,7 +162,6 @@ const AboutMeContentSpan = styled.span`
 const TopAndSkillsSpan = styled.span`
 	display: flex;
 	justify-content: center;
-	
 	font-size: 38px;
 	font-weight: bold;
 	animation: fade 500ms ease-in;

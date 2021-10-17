@@ -7,9 +7,10 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const scrollData = [
 	{ id: 'scroll1', name: 'Home', path: '/' },
-	{ id: 'scroll2', name: 'Aboutme', path: '/about' },
-	{ id: 'scroll3', name: 'Projects', path: '/project' },
-	{ id: 'scroll4', name: 'Contact', path: '/contact' },
+	{ id: 'scroll2', name: 'AboutmeP', path: '/about-p' },
+	{ id: 'scroll3', name: 'Aboutme', path: '/about' },
+	{ id: 'scroll4', name: 'Projects', path: '/project' },
+	{ id: 'scroll5', name: 'Contact', path: '/contact' },
 ]
 
 
