@@ -30,18 +30,7 @@ export default function Aboutme() {
 					<AboutDescription>
 						<motion.div variants={fadeInUp} initial="initial" animate="animation" style={{display:'flex',
 	justifyContent: 'center', width:'100%'}}>
-							<Description>
-								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Front-end</DescriptionH3>
-								<DescriptionP>•Languages<br/><DescriptionSpan>HTML, CSS, Javascript ES5, ES6+</DescriptionSpan></DescriptionP>
-								<DescriptionP>•Framework + Library<br/><DescriptionSpan>React, Express, Jquery</DescriptionSpan></DescriptionP>
-								<DescriptionP>•Database<br/><DescriptionSpan>MySQL, MongoDB</DescriptionSpan></DescriptionP>
-
-							</Description>
-							<Description>
-								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Other</DescriptionH3>
-								<DescriptionP>Figma<br/>Slack<br/>Vim<br/>Sourcetree</DescriptionP>
-								<DescriptionP>경험해 본 언어<br/><DescriptionSpan>Typescript, PHP</DescriptionSpan></DescriptionP>
-							</Description>
+							Hello
 						</motion.div>
 						
 					</AboutDescription>
