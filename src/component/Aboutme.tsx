@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from 'next/image';
 import { motion } from "framer-motion";
+import { fadeInUp } from '../../animations'
+
 
 export default function Aboutme() {
 	
@@ -20,16 +22,7 @@ export default function Aboutme() {
 		}
 	}
 
-	const variants2 = {
-		initial : {
-			opacity:0,
-			y: 60
-		},
-		animation : {
-			opacity:1,
-			y:0
-		}
-	}
+	
 
 	
 	
@@ -52,7 +45,7 @@ export default function Aboutme() {
 					</DescriptionTop>
 					
 					<AboutDescription>
-						<motion.div variants={variants2} initial="initial" animate="animation" style={{display:'flex',
+						<motion.div variants={fadeInUp} initial="initial" animate="animation" style={{display:'flex',
 	justifyContent: 'center', width:'100%'}}>
 							<Description>
 								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Front-end</DescriptionH3>
@@ -79,7 +72,7 @@ export default function Aboutme() {
 							<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
 					</DescriptionTop>
 					<AboutDescription>
-						<motion.div variants={variants2} initial="initial" animate="animation" style={{display:'flex',
+						<motion.div variants={fadeInUp} initial="initial" animate="animation" style={{display:'flex',
 		justifyContent: 'center', width:'100%'}}>
 							<Description>
 								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Education</DescriptionH3>
