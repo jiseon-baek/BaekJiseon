@@ -15,7 +15,7 @@ export default function Aboutme() {
 			<About>
 				
 				<AboutTop>
-						<TopAndSkillsSpan><img src="http://niceghostclub.com/web/upload/5d679898f35f8975389c48e1_computer_explorer_cool.svg" style={{ width: '40px'}}/>Skills + ⍺</TopAndSkillsSpan>
+						<TopAndSkillsSpan><Img src="/img/nice3.svg" width={40} height={40}/>Skills + ⍺</TopAndSkillsSpan>
 				</AboutTop>
 				
 				<AboutSkills>
@@ -76,8 +76,8 @@ export default function Aboutme() {
 									
 									<DescriptionP style={{ fontSize: '20px' }}>
 										<DescriptionSchool>
-											<img src="/img/school.png" style={{width: '60px', marginRight: '5px'}}/>
-											<div style={{ lineHeight: '30px'}} >
+											<Img src="/img/school.png" width={60} height={60} />
+											<div style={{ lineHeight: '30px', marginLeft: '10px'}} >
 											광운대학교 국제학부<br/>2016.03~2021.02
 											</div>
 										</DescriptionSchool>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Img from 'next/image';
 import styled from 'styled-components'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -25,7 +25,7 @@ const Contact = () => {
 			<Contacts >
 				<ContactContainer >
 					<ContactTitle>
-						<ContactTitleSpan><img src="http://niceghostclub.com/web/upload/search.png" style={contactIcon}></img>Contact</ContactTitleSpan>
+						<ContactTitleSpan><Img src="/img/nice3.svg" width={40} height={40}/>Contact</ContactTitleSpan>
 						
 					</ContactTitle>
 					<ContactDiv className="p-10">
@@ -62,12 +62,13 @@ const EmailButton = styled.button`
 	font-size:16px;
 	cursor: pointer;
 	border: none;
-	padding: 20px;
+	padding: 18px;
 	border-radius:20px;
 	transition: all 200ms ease;
 	background-color:#f0f0f0;
 	&:hover {
-		background-color: rgb(218, 56, 83);
+		background: rgb(248,113,113);
+background: linear-gradient(90deg, rgba(248,113,113,1) 0%, rgba(251,191,36,1) 100%);
 		color:white;
 		
 	}
@@ -139,6 +140,7 @@ const ContactGit = styled.a`
 	font-size: 30px;
 	transition: all 200ms ease;
 	&:hover  {
+		
     color:purple;
   }
 `;

@@ -18,7 +18,7 @@ export default function Aboutme() {
 			<About>
 				
 				<AboutTop>
-						<TopAndSkillsSpan><img src="http://niceghostclub.com/web/upload/5d679898f35f8975389c48e1_computer_explorer_cool.svg" style={{ width: '40px'}}/>About Me</TopAndSkillsSpan>
+						<TopAndSkillsSpan><Img src="/img/nice3.svg" width={40} height={40}/>About Me</TopAndSkillsSpan>
 				</AboutTop>
 				
 				<AboutSkills>
@@ -37,12 +37,12 @@ export default function Aboutme() {
 							<div className="flex-grow p-4 text-black">
 								<h6 className="mt-4 mb-5 font-mono text-xl font-extrabold tracking-wide text-gray-700">Let Me Introduce Myself</h6>
 								<motion.div
-								 className="grid gap-6 text-black lg:grid-cols-2"
+								 className="grid gap-6 text-black lg:grid-cols-2 "
 								 variants={stagger} initial="initial" animate="animation" 
 								 >
 								{services.map((service) => (
 									<motion.div
-									 className="bg-gray-200 rounded-lg lg:col-span-1"
+									 className="bg-gray-200 rounded-lg shadow-md lg:col-span-1"
 									 variants={fadeInUp}
 						
 									 >

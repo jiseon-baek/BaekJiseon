@@ -1,4 +1,5 @@
 import React from 'react';
+import Img from 'next/image';
 import styled, { keyframes } from 'styled-components';
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
 		<>
 		<Homeground >
 			<Homesvg data-aos="fade-up"
-     data-aos-duration="3000"><img src="/img/space.svg" style={{width:'400px'}}></img></Homesvg>
+     data-aos-duration="3000"><Img src="/img/space.svg" width={400} height={400}/></Homesvg>
 			<Homegreeting data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="2000">Welcome To JS's Space <Homehand>👋🏻</Homehand><br/><Homespan>항상 도전하고 성장하는 Front-end 개발자 '백지선'입니다</Homespan></Homegreeting>

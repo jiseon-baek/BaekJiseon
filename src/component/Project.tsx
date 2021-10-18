@@ -13,7 +13,7 @@ export default function Project() {
 	backgroundSize: 'contain',
 	backgroundPosition: 'center',
 	backgroundRepeat: 'no-repeat',
-	height: '250px',
+	
     borderTop: '1px solid #707070',
     borderRight: '1px solid #fff',
     borderLeft: '1px solid #707070',
@@ -47,7 +47,7 @@ export default function Project() {
     <>
 		<Projects>
 				<ProjectTop>
-					<Span><img src="http://niceghostclub.com/web/upload/5d679898f35f8975389c48e1_computer_explorer_cool.svg" style={{ width: '40px'}}></img>Projects</Span>
+					<Span><Img src="/img/nice3.svg" width={40} height={40}/>Projects</Span>
 				</ProjectTop>
 
 				
@@ -59,25 +59,19 @@ export default function Project() {
 				<Container>
 					<motion.div variants={stagger} initial="initial" animate="animation" className="grid justify-center lg:grid-cols-2">
 					{projects.project.map((project)=> (
-						<motion.div variants={fadeInUp}>
-							<ContainerDiv key={project.index}>
+						<motion.div variants={fadeInUp} key={project.index} >
+							<ContainerDiv >
 								<h4>{project.text}</h4>
 								<DivDescription>{project.description}</DivDescription>
 								<p>{project.skills}</p>
 								<p><ProjectLink href={project.codeUrl}>Code: Github</ProjectLink></p>
-								<a href={project.link}><img src={project.src} style={IMG} title="링크로 이동하기"></img></a>
+								<a href={project.link}><Img src={project.src} title="링크로 이동하기" width={500} height={300} className="p-3"></Img></a>
 								
 							</ContainerDiv>
 						</motion.div>
 					))}
 					
-					<ContainerDiv>
-						<h4>프랜차이즈 홈페이지</h4>
-						<DivDescription>삼촌의 부탁으로 3개의 프랜차이즈 홈페이지를 그누보드를 이용해 만들었습니다. 실제 서비스가 이뤄지는 홈페이지를 만드는 게 처음이었지만, php와 jquery의 기본에 대해 학습할 수 있었고 생소한 그누보드와 ftp tool을 접해보았던 좋은 기회였습니다. 다음은 3개의 홈페이지 중 대표 1개입니다.</DivDescription>
-						<p>사용기술: PHP, Jquery, 그누보드(tool)</p>
-						<a href="http://www.makridan.co.kr"><img src="/img/pp3.png" style={IMG} title="링크로 이동하기"></img></a>
-						
-					</ContainerDiv>
+					
 					</motion.div>
 					
 				</Container>
@@ -180,7 +174,7 @@ const ContainerDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 89%;
-	margin: 20px;
+	margin: 30px auto;
 	padding:10px;
 	background-color:white;
 	color: rgb(28, 28, 28);
@@ -227,16 +221,3 @@ const ProjectLink = styled.a`
 	}
 `;
 
-const ContainerImg = styled.div`
-	cursor: pointer;
-	padding: 3px 4.6px 4.1px 4.1px;
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 250px;
-    border-top: 1px solid #707070;
-    border-right: 1px solid #fff;
-    border-left: 1px solid #707070;
-    background-color: #6f6f6f;
-    box-shadow: inset -1px 0 1px 0 #b4b4b4, inset 0 -1px 1px 0 #000, inset 1px 1px 1px 0 #000;
-`;
