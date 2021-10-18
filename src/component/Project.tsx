@@ -99,7 +99,7 @@ const Projects = styled.section`
 	object-fit: cover;
 	margin:0;
 	padding-top: 2%;
-	padding-bottom: 12%;
+	padding-bottom: 1%;
 `;
 
 const ProjectTop = styled.div`

@@ -7,12 +7,12 @@ import { IService } from './type';
 export const services: IService[] = [
 	{
 		title: 'Character',
-		about: 	'긍적적이고 스트레스를 잘 받지 않는 성격으로 공동체에서 활기찬 에너지를 주는 편입니다.',
+		about: 	'긍적적이고 스트레스를 잘 받지 않는 성격으로 활기찬 에너지를 주는 것을 좋아합니다.',
 		Icon: RiChatSmile2Line,
 	},
 	{
 		title: 'How to work',
-		about: "혼자만 잘하는 것이 아닌, '같이' 잘 할 수 있는 팀원이 될 것입니다.",
+		about: "혼자만 잘하는 것이 아닌, '같이' 잘 할 수 있는 팀원이 되어 도움이 되는 동료가 되겠습니다.",
 		Icon: BsFillPeopleFill,
 	},
 	{
