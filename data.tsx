@@ -1,18 +1,31 @@
-import { RiChatSmile2Line } from 'react-icons/ri';
-import { SiSpringCreators } from 'react-icons/si';
+import { RiChatSmile2Line, RiEarthFill } from 'react-icons/ri';
+import { BsFillPeopleFill } from 'react-icons/bs';
+import { IoIosRocket } from 'react-icons/io';
 import { IService } from './type';
 
 
 export const services: IService[] = [
 	{
 		title: 'Character',
-		about: 	'항상 <b>긍정적으로</b> 생각하며, 스트레스를 잘 받지 않는 성격으로 팀에게 저의 에너지를 보이고 싶습니다.',
+		about: 	'긍적적이고 스트레스를 잘 받지 않는 성격으로 공동체에서 활기찬 에너지를 주는 편입니다.',
 		Icon: RiChatSmile2Line,
 	},
 	{
 		title: 'How to work',
-		about: '퍼블리셔, 백엔드개발자 분들과 함께 일하며 ',
-		Icon: SiSpringCreators,
+		about: "혼자만 잘하는 것이 아닌, '같이' 잘 할 수 있는 팀원이 될 것입니다.",
+		Icon: BsFillPeopleFill,
 	},
+	{
+		title: 'Goals',
+		about: "저의 목표는 '자신의 실력에 부끄럽지 않은 개발자가 되는 것'입니다. 끊임없이 공부하고 성장하며 저의 실력에 의구심이 들지 않는 개발자가 되겠습니다.",
+		Icon: IoIosRocket,
+	},
+	{
+		title: 'Ohter',
+		about: '국제학부를 전공하며 다양한 분야에 대해 공부하고 경험할 수 있었습니다. 이러한 경험을 바탕으로 시야가 넓은 개발자가 되고 싶습니다.',
+		Icon: RiEarthFill,
+	},
+
+	
 	
 ]

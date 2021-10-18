@@ -96,17 +96,7 @@ export default function Aboutme() {
 					</AboutDescription>
 					
 				</AboutSkills>
-				<AboutMe>
-					<AboutMeContent>
-						<h2>저는</h2>
-						<div className="content_top" >
-							<p><AboutMeContentSpan>도전</AboutMeContentSpan>을 즐기는 개발자</p>
-							<p>끊임없이 <AboutMeContentSpan>공부</AboutMeContentSpan>하고 <AboutMeContentSpan>성장</AboutMeContentSpan>하는 개발자</p>
-							<p><AboutMeContentSpan>팀워크</AboutMeContentSpan>를 중시하는 개발자</p>
-						</div>
-						<h2>입니다</h2>
-					</AboutMeContent>
-				</AboutMe>
+				
 				
 				
 			</About>
@@ -150,31 +140,9 @@ const AboutMe = styled.div`
 	border-radius:30px;
 `;
 
-const AboutMeContent = styled.div`
-	background-color:white;
-	display: flex;
-	justify-content: space-around;
-	padding: 20px 10px;
-    align-items: center;
-    font-size: 18px;
-    border-top: 1px none #707070;
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    background-color: #fff;
-    box-shadow: inset 0 -1px 1px 0 #707070, inset -1px 0 1px 0 #707070, inset 1px 1px 1px 0 #707070;
-    h2 {
-	    font-size:24px;
-    }
-    p { 
-	    padding: 4px 0 ;
-    }
-`;
 
-const AboutMeContentSpan = styled.span`
-	font-size:20px;
-	color: rgb(255, 124, 9);
-	font-weight: bold;
-`;
+
+
 
 const TopAndSkillsSpan = styled.span`
 	display: flex;
@@ -286,10 +254,7 @@ const DescriptionSchool = styled.div`
 	justify-content: center;
 `;
 
-const FadeDiv = styled.div`
-	margin-top: 60px;
 
-`;
 
 
 

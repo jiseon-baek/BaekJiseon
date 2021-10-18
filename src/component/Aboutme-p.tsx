@@ -2,7 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from 'next/image';
 import { motion } from "framer-motion";
-import { fadeInUp } from '../../animations'
+import { fadeInUp } from '../../animations';
+
+import { services } from '../../data';
+
+import ServiceCard from './ServiceCard';
 
 
 export default function Aboutme() {
@@ -29,42 +33,19 @@ export default function Aboutme() {
 					
 					<AboutDescription>
 						<motion.div variants={fadeInUp} initial="initial" animate="animation" style={{display:'flex',
-	justifyContent: 'center', width:'100%'}}>
-							Hello
+	justifyContent: 'center', width:'100%', fontFamily: 'Cafe24SsurroundAir'}}>
+							<div className="flex-grow p-4 text-black">
+								<h6 className="mt-4 mb-5 font-mono text-xl font-extrabold tracking-wide text-gray-700">Let me introduce myself!</h6>
+								<div className="grid gap-6 text-black lg:grid-cols-2">
+								{services.map((service) => (
+									<div className="bg-gray-200 rounded-lg lg:col-span-1">
+										<ServiceCard service={service} />
+									</div>
+								))}
+								</div>
+							</div>
 						</motion.div>
 						
-					</AboutDescription>
-					
-
-
-				
-					<DescriptionTop>
-						<DescriptionTopTextArea defaultValue='☺︎ And other informations about me!' className="font-mono text-black"/>
-							<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
-							<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
-					</DescriptionTop>
-					<AboutDescription>
-						<motion.div variants={fadeInUp} initial="initial" animate="animation" style={{display:'flex',
-		justifyContent: 'center', width:'100%'}}>
-							<Description>
-								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Education</DescriptionH3>
-								
-									
-									<DescriptionP style={{ fontSize: '20px' }}>
-										<DescriptionSchool>
-											<img src="/img/school.png" style={{width: '60px', marginRight: '5px'}}/>
-											<div style={{ lineHeight: '30px'}} >
-											광운대학교 국제학부<br/>2016.03~2021.02
-											</div>
-										</DescriptionSchool>
-									</DescriptionP>
-								
-							</Description>
-							<Description>
-								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Certificate</DescriptionH3>
-								<DescriptionP style={{ fontSize: '20px' }}>컴퓨터활용능력 1급<br/></DescriptionP>
-							</Description>
-						</motion.div>
 					</AboutDescription>
 					
 				</AboutSkills>
@@ -208,59 +189,10 @@ const AboutDescription = styled.div`
 	box-shadow: inset 1px -1px 1px 0 #656565, inset -1px -1px 1px 0 #656565;
 `;
 
-const Description = styled.div`
-	width: 40%;
-	color: rgb(31, 31, 31);
-	margin: 20px;
-	font-size: 30px;
-	padding: 3px;
-`;
 
-const DescriptionH3 = styled.h3`
-	margin: 0 auto;
-	padding: 4px 0;
-	font-size: 30px;
-	color:rgb(43, 43, 43);
-	border-style: solid;
-    	border-width: 1px;
-	border-color: #fff #000 #000 #fff;
-    	background-color: #d7d7d7;
-    	box-shadow: inset -1px -1px 1px 0 #707070;
-`;
 
-const DescriptionP = styled.p`
-	font-family: 'Cafe24SsurroundAir';
-	padding:20px;
-	margin-bottom: 0;
-	margin-top: 12px;
-	background-color: #e9e9e9;
-	font-size: 24px;
-	border-style: solid;
-    border-width: 1px;
-	border-color: #fff #000 #000 #fff;
-    box-shadow: inset -1px -1px 1px 0 #707070;
-    &:hover span {
-	    color: rgb(203, 51, 76);
-    }
-`;
 
-const DescriptionSpan = styled.span`
-	font-size: 18px;
-	background-color: transparent;
-	border: none;
-	box-shadow: none;
 
-`;
-
-const DescriptionSchool = styled.div`
-	display: flex;
-	justify-content: center;
-`;
-
-const FadeDiv = styled.div`
-	margin-top: 60px;
-
-`;
 
 
 
