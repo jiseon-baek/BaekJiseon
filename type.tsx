@@ -5,3 +5,9 @@ export type IService {
 	about: string,
 	Icon: IconType,
 }
+
+export type ISkill {
+	name: string,
+	level: string,
+	Icon: IconType,
+}
