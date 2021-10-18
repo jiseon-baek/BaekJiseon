@@ -69,7 +69,7 @@ export default function Aboutme() {
 					</DescriptionTop>
 					<AboutDescription>
 						<motion.div variants={fadeInUp} initial="initial" animate="animation" style={{display:'flex',
-		justifyContent: 'center', width:'100%'}}>
+		justifyContent: 'center', width:'100%', background: 'white'}}>
 							<Description>
 								<DescriptionH3>Education</DescriptionH3>
 								

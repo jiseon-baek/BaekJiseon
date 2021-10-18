@@ -4,6 +4,9 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
+import { motion } from "framer-motion";
+import { fadeInUp, stagger } from '../../animations';
+
 
 
 const Contact = () => {
@@ -20,25 +23,28 @@ const Contact = () => {
 	return (
 		<>
 			<Contacts >
-				<ContactContainer data-aos="flip-left" data-aos-duration="2800" >
+				<ContactContainer >
 					<ContactTitle>
 						<ContactTitleSpan><img src="http://niceghostclub.com/web/upload/search.png" style={contactIcon}></img>Contact</ContactTitleSpan>
 						
 					</ContactTitle>
 					<ContactDiv className="p-10">
-						{content.inform.map((inform) => (
-							<ContactInform key={inform.index}>
-								<ContactInformH3>{inform.title}</ContactInformH3>
-								<ContactInformP>{inform.address}</ContactInformP>
-							</ContactInform>
-						))}
-						<ContactInform>
-							<ContactInformH3>Github</ContactInformH3>
-							<ContactGit href="https://github.com/jiseon-baek"><FontAwesomeIcon icon={faGithub}/></ContactGit>
-						</ContactInform>
-						<EmailButton onClick={() => window.open('mailto:js.coding.place@gmail.com')}>
-							Sending Mail
-						</EmailButton>
+						
+							<motion.div variants={fadeInUp} initial="initial" animate="animation">
+								{content.inform.map((inform) => (
+									<ContactInform key={inform.index}>
+										<ContactInformH3>{inform.title}</ContactInformH3>
+										<ContactInformP>{inform.address}</ContactInformP>
+									</ContactInform>
+								))}
+								<ContactInform>
+									<ContactInformH3>Github</ContactInformH3>
+									<ContactGit href="https://github.com/jiseon-baek"><FontAwesomeIcon icon={faGithub}/></ContactGit>
+								</ContactInform>
+								<EmailButton onClick={() => window.open('mailto:js.coding.place@gmail.com')}>
+									Sending Mail
+								</EmailButton>
+							</motion.div>
 						
 
 					</ContactDiv>
