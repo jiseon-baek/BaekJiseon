@@ -2,28 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from 'next/image';
 import { motion } from "framer-motion";
-import { fadeInUp } from '../../animations'
+import { fadeInUp } from '../../animations';
+import { languages, tools } from '../../data';
+import Bar from './Bar';
 
 
 export default function Aboutme() {
-	
-	const variants = {
-		initial : {
-			width: 0
-		},
-		animation : {
-			width: '1000px',
-			transition: {
-				duration: 0.4,
-				type: 'spring',
-				damping: 10,
-				stiffness:100
-			}
-		}
-	}
-
-	
-
 	
 	
 	return (
@@ -45,25 +29,37 @@ export default function Aboutme() {
 					</DescriptionTop>
 					
 					<AboutDescription>
-						<motion.div variants={fadeInUp} initial="initial" animate="animation" style={{display:'flex',
-	justifyContent: 'center', width:'100%'}}>
-							<Description>
-								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Front-end</DescriptionH3>
-								<DescriptionP>•Languages<br/><DescriptionSpan>HTML, CSS, Javascript ES5, ES6+</DescriptionSpan></DescriptionP>
-								<DescriptionP>•Framework + Library<br/><DescriptionSpan>React, Express, Jquery</DescriptionSpan></DescriptionP>
-								<DescriptionP>•Database<br/><DescriptionSpan>MySQL, MongoDB</DescriptionSpan></DescriptionP>
+						
+						
 
-							</Description>
-							<Description>
-								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Other</DescriptionH3>
-								<DescriptionP>Figma<br/>Slack<br/>Vim<br/>Sourcetree</DescriptionP>
-								<DescriptionP>경험해 본 언어<br/><DescriptionSpan>Typescript, PHP</DescriptionSpan></DescriptionP>
-							</Description>
-						</motion.div>
+							<div className="w-11/12 gap-6 p-4 text-black " >
+								<SkillContent className="grid gap-6 p-4 bg-white rounded-3xl md:grid-cols-2">
+								<div className="w-full">
+									<h5 className="m-5 text-2xl font-bold " style={{fontFamily: 'Cafe24SsurroundAir', fontWeight: 'bold'}}>Languages & Framework</h5>
+									<div className="my-2">
+										{languages.map((Language) => (
+											<Bar data={Language} key={Language.name}/>
+
+										))}
+										
+									</div>
+								</div>
+								<div>
+									<h5 className="m-5 text-2xl font-bold " style={{fontFamily: 'Cafe24SsurroundAir', fontWeight: 'bold'}}>Tools</h5>
+									<div className="my-2">
+										{tools.map((tool) => (
+											<Bar data={tool} key={tool.name}/>
+							
+										))}
+										
+									</div>
+								</div>
+								</SkillContent>
+							</div>
 						
 					</AboutDescription>
 					
-
+					
 
 				
 					<DescriptionTop>
@@ -75,7 +71,7 @@ export default function Aboutme() {
 						<motion.div variants={fadeInUp} initial="initial" animate="animation" style={{display:'flex',
 		justifyContent: 'center', width:'100%'}}>
 							<Description>
-								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Education</DescriptionH3>
+								<DescriptionH3>Education</DescriptionH3>
 								
 									
 									<DescriptionP style={{ fontSize: '20px' }}>
@@ -89,7 +85,7 @@ export default function Aboutme() {
 								
 							</Description>
 							<Description>
-								<DescriptionH3 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400">Certificate</DescriptionH3>
+								<DescriptionH3>Certificate</DescriptionH3>
 								<DescriptionP style={{ fontSize: '20px' }}>컴퓨터활용능력 1급<br/></DescriptionP>
 							</Description>
 						</motion.div>
@@ -110,6 +106,16 @@ const Nice = styled.div`
 	margin-top:-4%;
 	
 `;
+
+const SkillContent = styled.div`
+	border-top: 1px none #707070;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    box-shadow: inset 0 -1px 1px 0 #707070, inset -1px 0 1px 0 #707070, inset 1px 1px 1px 0 #707070;
+
+
+`;
+
 
 const About = styled.section`
 	background-image: url(/img/home-bg.svg);
@@ -191,7 +197,7 @@ const AboutDescription = styled.div`
 	border-right: 1px solid #000;
 	border-bottom: 1px solid #000;
 	border-left: 1px solid #fff;
-	background-color: #ffffff;
+	background-color: #eeeeee;
 	box-shadow: inset 1px -1px 1px 0 #656565, inset -1px -1px 1px 0 #656565;
 `;
 

@@ -35,7 +35,7 @@ export const services: IService[] = [
 	
 ]
 
-export const language: ISkill[] = [
+export const languages: ISkill[] = [
 	{
 		name:'HTML',
 		level: '90%',
@@ -60,7 +60,7 @@ export const language: ISkill[] = [
 		name:'PHP',
 		level: '30%',
 		Icon: SiPhp,
-	}
+	},
 ]
 
 export const tools: ISkill[] = [

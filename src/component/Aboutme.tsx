@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from 'next/image';
 import { motion } from "framer-motion";
-import { fadeInUp } from '../../animations';
+import { fadeInUp, stagger } from '../../animations';
 
 import { services } from '../../data';
 
@@ -32,19 +32,26 @@ export default function Aboutme() {
 					</DescriptionTop>
 					
 					<AboutDescription>
-						<motion.div variants={fadeInUp} initial="initial" animate="animation" style={{display:'flex',
+						<div style={{display:'flex',
 	justifyContent: 'center', width:'100%', fontFamily: 'Cafe24SsurroundAir'}}>
 							<div className="flex-grow p-4 text-black">
 								<h6 className="mt-4 mb-5 font-mono text-xl font-extrabold tracking-wide text-gray-700">Let Me Introduce Myself</h6>
-								<div className="grid gap-6 text-black lg:grid-cols-2">
+								<motion.div
+								 className="grid gap-6 text-black lg:grid-cols-2"
+								 variants={stagger} initial="initial" animate="animation" 
+								 >
 								{services.map((service) => (
-									<div className="bg-gray-200 rounded-lg lg:col-span-1">
+									<motion.div
+									 className="bg-gray-200 rounded-lg lg:col-span-1"
+									 variants={fadeInUp}
+						
+									 >
 										<ServiceCard service={service} />
-									</div>
+									</motion.div>
 								))}
-								</div>
+								</motion.div>
 							</div>
-						</motion.div>
+						</div>
 						
 					</AboutDescription>
 					

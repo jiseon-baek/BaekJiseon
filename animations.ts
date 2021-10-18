@@ -8,3 +8,16 @@ export const fadeInUp = {
 		y:0
 	}
 }
+export const stagger = {
+	initial : {
+		
+	},
+	animation : {
+		transition: {
+			staggerChildren: 0.1,
+		}
+	}
+}
+
+
+
