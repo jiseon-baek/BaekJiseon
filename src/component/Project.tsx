@@ -25,7 +25,7 @@ export default function Project() {
 		project: [
 			{ text: 'Personal Portfolio' ,
         description: '현재 보이는 저의 개인 포트폴리오 입니다. 순수 React.JS로 제작해 Hooks, Router, Redux 등에 대해 자세히 학습할 수 있었습니다.', 
-        skills: '사용기술: React, NodeJS',
+        skills: '사용기술: React, NodeJS, Varcel',
         link: 'https://jiseon-baek.github.io/Js-s-SpacE/',
         className: 'container_img project_one',
         codeUrl: 'https://github.com/jiseon-baek/Personal-Portfolio',
@@ -40,8 +40,26 @@ export default function Project() {
         codeUrl: 'https://github.com/jiseon-baek/Music-Tag-App',
 	index: 2,
 	src: '/img/pp2.png'
-        }
-		]
+        },
+	{ text: '달고나 게임' ,
+        description: '10초 내에 달고나 5개를 찾아 클릭하면 성공하는 게임입니다. Javascript의 Class module에 관해 학습하며 만든 게임입니다. ', 
+        skills: '사용기술: HTML, CSS, JavaScript',
+        link: 'https://jiseon-baek.github.io/DALGONA-game-with-JS/',
+        className: 'container_img project_three',
+        codeUrl: 'https://github.com/jiseon-baek/DALGONA-game-with-JS',
+	index: 3,
+	src: '/img/pp4.png'
+        },
+	{ text: '프랜차이즈 홈페이지' ,
+        description: '삼촌의 부탁으로 3개의 프랜차이즈 홈페이지를 그누보드를 이용해 만들었습니다. 실제 서비스가 이뤄지는 홈페이지를 만드는 게 처음이었지만, php와 jquery의 기본에 대해 학습할 수 있었고 생소한 그누보드와 ftp tool을 접해보았던 좋은 기회였습니다. 다음은 3개의 홈페이지 중 대표 1개입니다. ', 
+        skills: '사용기술: PHP, Jquery, 그누보드(tool)',
+        link: 'http://www.makridan.co.kr',
+        className: 'container_img project_four',
+        codeUrl: '#',
+	index: 4,
+	src: '/img/pp3.png'
+        },
+	]
 	}
 	return (
     <>
@@ -63,9 +81,9 @@ export default function Project() {
 							<ContainerDiv >
 								<h4>{project.text}</h4>
 								<DivDescription>{project.description}</DivDescription>
-								<p>{project.skills}</p>
+								<p className="p-2 bg-white rounded-full">{project.skills}</p>
 								<p><ProjectLink href={project.codeUrl}>Code: Github</ProjectLink></p>
-								<a href={project.link}><Img src={project.src} title="링크로 이동하기" width={500} height={300} className="p-3"></Img></a>
+								<a href={project.link}><Img src={project.src} title="링크로 이동하기" width={500} height={280} className="p-3"></Img></a>
 								
 							</ContainerDiv>
 						</motion.div>
