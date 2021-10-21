@@ -32,7 +32,7 @@ export default function Project() {
 	index: 1,
 	src: '/img/pp1.png'
         },
-			{ text: '🎵 Music Tag App' ,
+	{ text: '🎵 Music Tag App' ,
         description: '음악을 추천하고 공유하는 React기반 Music 웹사이트입니다. CRUD 기능과 회원가입 및 로그인, 상세페이지 기능 등이 있습니다.', 
         skills: '사용기술: React + Redux, Node, Express, MongoDB',
         link: 'https://music-tag-js100.netlify.app/posts',

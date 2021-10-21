@@ -4,6 +4,7 @@ export type IService = {
 	title: string,
 	about: string,
 	Icon: IconType,
+	key: number,
 }
 
 export type ISkill = {

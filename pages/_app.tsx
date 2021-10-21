@@ -9,7 +9,6 @@ const MyApp:FunctionComponent<{ Component: any, pageProps: any}> = ({ Component,
     <>
           <Navbar/>
           <Layout>
-          
             <Component {...pageProps} />
           </Layout>
           

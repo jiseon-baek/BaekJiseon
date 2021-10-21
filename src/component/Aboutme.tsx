@@ -44,7 +44,7 @@ export default function Aboutme() {
 									<motion.div
 									 className="bg-gray-200 rounded-lg shadow-md lg:col-span-1"
 									 variants={fadeInUp}
-						
+									 key={service.key}
 									 >
 										<ServiceCard service={service} />
 									</motion.div>
