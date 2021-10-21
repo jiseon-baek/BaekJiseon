@@ -1,32 +1,37 @@
 import React from 'react';
 import Homeground from '../src/component/Home';
 
-import { GetStaticProps, GetStaticPropsContext } from 'next';
+import { GetServerSideProps, GetServerSidePropsContext } from 'next';
 
 
 
-export default function Home() {
+function Home() {
+  
+
+
   return (
     <>
-      
-    <Homeground/>
     
+    <Homeground/>
+   
       
     
     </>
   )
 }
 
-export const getServerSideProps: GetStaticProps = async (context: GetStaticPropsContext) => {
+export default Home;
 
-  const res = await fetch('http://localhost:3000/api/services')
-  const data = await res.json();
-  console.log(data);
+export const getServerSideProps: GetServerSideProps = async (context: GetServerSidePropsContext) => {
+
+  //console.log(process.env.VERCEL_URL);
+  
+  //const res = await fetch(`${process.env.VERCEL_URL}/api/services`);
+  //const data = await res.json();
 
   return {
     props: {
-      services: data.services,
-
+      endpoint: process.env.VERCEL_URL
     }
   }
 }

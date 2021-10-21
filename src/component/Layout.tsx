@@ -6,7 +6,7 @@ type Props = {
 	children: ReactChild
 }
 
-const Layout: FC<Props> = ({children}) => {
+const Layout: FC<Props> = ({children} : string) => {
 	return (
 		<>
 		
