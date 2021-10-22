@@ -22,16 +22,22 @@ const Bar:FunctionComponent<{data: ISkill}> = ({data:{ Icon, level, name }}) => 
 
 	
 	return (
-		<div className="text-black bg-gray-200 rounded-full">
+		<div className="font-sans text-black bg-gray-200 rounded-full ">
 			
-			<motion.div className="flex items-center mb-2 rounded-full shadow-md bg-gradient-to-r from-yellow-400 to-red-400 "
+			<motion.div className="flex items-center justify-between mb-2 rounded-full shadow-md bg-gradient-to-r from-yellow-400 to-red-400 "
 				style={{width: level}}
 				variants={variants}
 				initial="initial"
 				animate="animate"
 			>
-				<Icon className="m-3" />
-				{name}
+				<div className="flex m-3">
+					<Icon className="mx-2 mt-1 text-lg" />
+					<span className="text-center">{name}</span>
+				</div>
+				<div className="pr-4 text-xs">
+				{level}
+				</div>
+				
 			
 			</motion.div>
 			

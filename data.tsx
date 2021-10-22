@@ -3,7 +3,7 @@ import { BsFillPeopleFill } from 'react-icons/bs';
 import { BiGitBranch } from 'react-icons/bi';
 import { IoIosRocket, IoLogoJavascript, IoLogoSlack, IoLogoSass } from 'react-icons/io';
 import { AiFillHtml5 } from 'react-icons/ai';
-import { SiCss3, SiNextdotjs } from 'react-icons/si';
+import { SiCss3, SiNextdotjs, SiTypescript } from 'react-icons/si';
 import { FaReact } from 'react-icons/fa';
 import { FiFigma } from 'react-icons/fi';
 import { IService, ISkill } from './type';
@@ -66,6 +66,12 @@ export const languages: ISkill[] = [
 		level: '70%',
 		Icon: FaReact,
 	},
+	{
+		name:'Typescript',
+		level: '50%',
+		Icon: SiTypescript,
+	},
+
 	{
 		name:'SCSS',
 		level: '70%',
