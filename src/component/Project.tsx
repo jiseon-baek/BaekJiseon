@@ -127,6 +127,7 @@ const ProjectTop = styled.div`
 	display:flex;
 	width: 70%;
 	text-align: center;
+	font-weight: bold;
 	margin: 0% auto;
 	background-color: rgb(206, 206, 206);
 	border-bottom: 1px solid #707070;
@@ -134,7 +135,7 @@ const ProjectTop = styled.div`
 `;
 
 const Span = styled.span`
-display: flex;
+	display: flex;
 	justify-content: center;
 	font-size: 38px;
 	font-weight: bold;

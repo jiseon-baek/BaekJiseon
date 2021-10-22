@@ -79,7 +79,7 @@ background: linear-gradient(90deg, rgba(248,113,113,1) 0%, rgba(251,191,36,1) 10
 
 const Contacts = styled.section`
 	background-image: url(/img/home-bg.svg);
-	font-family: 'Cafe24SsurroundAir';
+	
 	height: 100vh;
 	padding-top:9%;
 	text-align: center;
@@ -104,7 +104,7 @@ const ContactTitleSpan = styled.span`
 display: flex;
 	justify-content: center;
 	font-size: 40px;
-	
+	font-weight: bold;
 	text-align: center;
 	animation: fade 500ms ease-in;
 	width: 40%;
@@ -122,7 +122,7 @@ const ContactDiv = styled.div`
 	background-color: white;
 	width: 70%;
 	margin: 0 auto;
-	
+	font-family: 'Cafe24SsurroundAir';
 	border-style: solid;
     border-width: 1px;
     border-color: #000 #fff #000 #000;

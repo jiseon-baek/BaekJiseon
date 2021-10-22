@@ -1,8 +1,8 @@
 import React, { FunctionComponent, useEffect } from 'react';
 import '../styles/globals.css';
-import "tailwindcss/tailwind.css"
 import Layout from '../src/component/Layout'
 import Navbar from '../src/component/Navbar';
+import '../tailwind.css';
 
 import AOS from 'aos';
 import "aos/dist/aos.css";
