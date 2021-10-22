@@ -28,7 +28,7 @@ export default function Project() {
 			{ text: 'Personal Portfolio' ,
         description: '현재 보이는 저의 개인 포트폴리오 입니다. 순수 React.JS로 제작했었지만, SSR과 SEO를 위해 Next.js와 Typescript를 이용해 만든 뒤 Vercel로 배포하였습니다.', 
         skills: '사용기술: React, Typescript, Vercel',
-        link: 'https://js100-frontend-portfolio.vercel.app/',
+        link: 'https://js100-frontend-portfolio-git-master-jiseon-baek.vercel.app/',
         className: 'container_img project_one',
         codeUrl: 'https://github.com/jiseon-baek/JISUN100_portfolio',
 	index: 1,
