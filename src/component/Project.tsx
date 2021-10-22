@@ -28,9 +28,9 @@ export default function Project() {
 			{ text: 'Personal Portfolio' ,
         description: '현재 보이는 저의 개인 포트폴리오 입니다. 순수 React.JS로 제작해 Hooks, Router, Redux 등에 대해 자세히 학습할 수 있었습니다.', 
         skills: '사용기술: React, NodeJS, Varcel',
-        link: 'https://jiseon-baek.github.io/Js-s-SpacE/',
+        link: 'https://js100-frontend-portfolio.vercel.app/',
         className: 'container_img project_one',
-        codeUrl: 'https://github.com/jiseon-baek/Personal-Portfolio',
+        codeUrl: 'https://github.com/jiseon-baek/JISUN100_portfolio',
 	index: 1,
 	src: '/img/pp1.png'
         },
