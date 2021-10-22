@@ -6,7 +6,6 @@ const skill = () => {
 		<>
 		<Head>
         		<title>JS | Frontend Portfolio | Skills</title>
-			
       		</Head>
 			<Skills/>
 		</>

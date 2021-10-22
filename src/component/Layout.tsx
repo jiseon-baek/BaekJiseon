@@ -12,10 +12,7 @@ const Layout: React.FC<Props> = ({children}) => {
 	return (
 		<>
 		
-		<Head>
-        		<title>JS | Frontend Portfolio</title>
-			
-      		</Head>
+		
 		
 		
 		
