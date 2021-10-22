@@ -6,9 +6,9 @@ import { GetServerSideProps, GetServerSidePropsContext } from 'next';
 
 
 
-function Home() {
+function Home({endpoint}: any) {
   
-
+  console.log(endpoint);
 
   return (
     <>

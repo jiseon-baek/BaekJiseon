@@ -26,9 +26,9 @@ const Navbar = () => {
 			<NavScroll>
 				<NavbarContainer>
 				<Link href="/"><Navlogo>JS</Navlogo></Link>
-				<Navgit>
+				
 				<Navgit href="https://github.com/jiseon-baek"><FontAwesomeIcon icon={faGithub}/></Navgit>
-				</Navgit>
+				
 				
 				</NavbarContainer> 
 				<ul style={{display: 'flex',
