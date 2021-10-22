@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { ISkill } from '../../type';
 import { motion } from "framer-motion";
-
+import "tailwindcss/tailwind.css"
 
 const Bar:FunctionComponent<{data: ISkill}> = ({data:{ Icon, level, name }}) => {
 	const variants = {

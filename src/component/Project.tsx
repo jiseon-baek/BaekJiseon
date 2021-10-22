@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { fadeInUp, stagger } from '../../animations';
 
+import "tailwindcss/tailwind.css";
+
 
 export default function Project() {
 	

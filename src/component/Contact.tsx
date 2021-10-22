@@ -6,6 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import { motion } from "framer-motion";
 import { fadeInUp, stagger } from '../../animations';
+import "tailwindcss/tailwind.css"
 
 
 

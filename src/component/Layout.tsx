@@ -1,6 +1,7 @@
 import Navbar from './Navbar'
-import Head from 'next/head'
-import React, { ReactChild, FC } from 'react'
+import Head from 'next/head';
+import React, { ReactChild, FC } from 'react';
+import "tailwindcss/tailwind.css";
 
 type Props = {
 	children: any,

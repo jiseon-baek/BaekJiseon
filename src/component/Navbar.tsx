@@ -5,6 +5,8 @@ import { useRouter } from "next/router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
+import "tailwindcss/tailwind.css";
+
 const scrollData = [
 	{ id: 'scroll1', name: 'Home', path: '/' },
 	{ id: 'scroll2', name: 'Aboutme', path: '/about' },

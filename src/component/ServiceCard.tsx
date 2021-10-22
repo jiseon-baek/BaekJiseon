@@ -1,5 +1,6 @@
-import { FunctionComponent } from "react"
-import { IService } from "../../type"
+import { FunctionComponent } from "react";
+import { IService } from "../../type";
+import "tailwindcss/tailwind.css";
 
 const ServiceCard:FunctionComponent<{service: IService}> = ({service:{Icon, about, title}}) => {
 	return (

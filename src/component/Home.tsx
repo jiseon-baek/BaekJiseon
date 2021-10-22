@@ -1,6 +1,7 @@
 import React from 'react';
 import Img from 'next/image';
 import styled, { keyframes } from 'styled-components';
+import "tailwindcss/tailwind.css"
 
 export default function Home() {
 	return (

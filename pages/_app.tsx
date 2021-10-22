@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useEffect } from 'react';
-import Script from 'next/script'
 import '../styles/globals.css';
+import "tailwindcss/tailwind.css"
 import Layout from '../src/component/Layout'
 import Navbar from '../src/component/Navbar';
 
@@ -19,7 +19,7 @@ const MyApp:FunctionComponent<{ Component: any, pageProps: any}> = ({ Component,
 
   return (
     <>
-          <Script src="https://third-party-script.js"></Script>
+          
           <Navbar/>
           <Layout>
             <Component {...pageProps} />
