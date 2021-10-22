@@ -7,7 +7,7 @@ import { fadeInUp, stagger } from '../../animations';
 import { services } from '../../data';
 
 import ServiceCard from './ServiceCard';
-import "tailwindcss/tailwind.css";
+import "tailwindcss/tailwind.css"
 
 
 export default function Aboutme() {

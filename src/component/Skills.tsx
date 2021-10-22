@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Img from 'next/image';
+import { FaLightbulb } from 'react-icons/fa';
 import { motion } from "framer-motion";
 import { fadeInUp } from '../../animations';
 import { languages, tools } from '../../data';
@@ -54,9 +55,13 @@ export default function Aboutme() {
 										
 									</div>
 								</div>
+								
 								</SkillContent>
+								<div className="flex justify-center w-full p-3 mt-4 text-lg bg-white" style={{fontFamily: 'Cafe24SsurroundAir', fontWeight: 'bold'}}>
+									<FaLightbulb className="mr-2"/> 경험해본 언어들: PHP, Jquery, Express
+								</div>
 							</div>
-						
+							
 					</AboutDescription>
 					
 					
@@ -68,8 +73,8 @@ export default function Aboutme() {
 							<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
 					</DescriptionTop>
 					<AboutDescription>
-						<motion.div variants={fadeInUp} initial="initial" animate="animation" style={{display:'flex',
-		justifyContent: 'center', width:'100%', background: 'white'}}>
+						<motion.div variants={fadeInUp} initial="initial" animate="animation" style={{
+		justifyContent: 'center', width:'100%', background: 'white'}} className="grid lg:grid-cols-2">
 							<Description>
 								<DescriptionH3>Education</DescriptionH3>
 								
@@ -88,6 +93,7 @@ export default function Aboutme() {
 								<DescriptionH3>Certificate</DescriptionH3>
 								<DescriptionP style={{ fontSize: '20px' }}>컴퓨터활용능력 1급<br/></DescriptionP>
 							</Description>
+							
 						</motion.div>
 					</AboutDescription>
 					
@@ -202,7 +208,7 @@ const AboutDescription = styled.div`
 `;
 
 const Description = styled.div`
-	width: 40%;
+	width: 90%;
 	color: rgb(31, 31, 31);
 	margin: 20px;
 	font-size: 30px;

@@ -16,8 +16,8 @@ function Home({endpoint}: any) {
     <Head>
         		<title>JS | Frontend Portfolio | Home</title>
             <meta name="keywords" content="프론트엔드, 프론트엔드 포트폴리오, frontend, frontend portfolio"/>
-          <meta name="description" content="Author: JiseonBaek, Description: This is the frontend portfolio for seeking jobs."/>
-          <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+            <meta name="description" content="Author: JiseonBaek, Description: This is the frontend portfolio for seeking jobs."/>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 			
       		</Head>
     
