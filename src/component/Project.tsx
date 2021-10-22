@@ -26,8 +26,8 @@ export default function Project() {
 	const projects = {
 		project: [
 			{ text: 'Personal Portfolio' ,
-        description: '현재 보이는 저의 개인 포트폴리오 입니다. 순수 React.JS로 제작해 Hooks, Router, Redux 등에 대해 자세히 학습할 수 있었습니다.', 
-        skills: '사용기술: React, NodeJS, Varcel',
+        description: '현재 보이는 저의 개인 포트폴리오 입니다. 순수 React.JS로 제작했었지만, SSR과 SEO를 위해 Next.js와 Typescript를 이용해 만든 뒤 Vercel로 배포하였습니다.', 
+        skills: '사용기술: React, Typescript, Vercel',
         link: 'https://js100-frontend-portfolio.vercel.app/',
         className: 'container_img project_one',
         codeUrl: 'https://github.com/jiseon-baek/JISUN100_portfolio',
@@ -35,7 +35,7 @@ export default function Project() {
 	src: '/img/pp1.png'
         },
 	{ text: '🎵 Music Tag App' ,
-        description: '음악을 추천하고 공유하는 React기반 Music 웹사이트입니다. CRUD 기능과 회원가입 및 로그인, 상세페이지 기능 등이 있습니다.', 
+        description: '음악을 추천하고 공유하는 React기반 Music 웹사이트입니다. 포스트, 회원가입 및 로그인, 상세페이지 기능이 있습니다. DB를 다루는 방법과 CRUD를 구성하는 방법에 대해 배울 수 있었습니다.', 
         skills: '사용기술: React + Redux, Node, Express, MongoDB',
         link: 'https://music-tag-js100.netlify.app/posts',
         className: 'container_img project_two',
@@ -44,7 +44,7 @@ export default function Project() {
 	src: '/img/pp2.png'
         },
 	{ text: '달고나 게임' ,
-        description: '10초 내에 달고나 5개를 찾아 클릭하면 성공하는 게임입니다. Javascript의 Class module에 관해 학습하며 만든 게임입니다. ', 
+        description: '10초 내에 달고나 5개를 찾아 클릭하면 성공하는 게임입니다. HTML, CSS, Javascript를 처음 배우며 만든 기초 게임입니다. ', 
         skills: '사용기술: HTML, CSS, JavaScript',
         link: 'https://jiseon-baek.github.io/DALGONA-game-with-JS/',
         className: 'container_img project_three',
@@ -53,7 +53,7 @@ export default function Project() {
 	src: '/img/pp4.png'
         },
 	{ text: '프랜차이즈 홈페이지' ,
-        description: '삼촌의 부탁으로 3개의 프랜차이즈 홈페이지를 그누보드를 이용해 만들었습니다. 실제 서비스가 이뤄지는 홈페이지를 만드는 게 처음이었지만, php와 jquery의 기본에 대해 학습할 수 있었고 생소한 그누보드와 ftp tool을 접해보았던 좋은 기회였습니다. 다음은 3개의 홈페이지 중 대표 1개입니다. ', 
+        description: '지인의 부탁으로 3개의 프랜차이즈 홈페이지를 그누보드를 이용해 만들었습니다. 실제 서비스가 이뤄지는 홈페이지를 만드는 게 처음이었지만, php와 jquery의 기본에 대해 학습할 수 있었고 생소한 그누보드와 ftp tool을 접해보았던 좋은 기회였습니다. 다음은 3개의 홈페이지 중 대표 1개입니다. ', 
         skills: '사용기술: PHP, Jquery, 그누보드(tool)',
         link: 'http://www.makridan.co.kr',
         className: 'container_img project_four',
