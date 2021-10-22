@@ -1,12 +1,25 @@
-import type { AppProps } from 'next/app';
+import React, { FunctionComponent, useEffect } from 'react';
+import Script from 'next/script'
 import '../styles/globals.css';
 import Layout from '../src/component/Layout'
 import Navbar from '../src/component/Navbar';
-import React, { FunctionComponent } from 'react';
+
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const MyApp:FunctionComponent<{ Component: any, pageProps: any}> = ({ Component, pageProps}) => {
+
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+    });
+  }, []);
+
   return (
     <>
+          <Script src="https://third-party-script.js"></Script>
           <Navbar/>
           <Layout>
             <Component {...pageProps} />

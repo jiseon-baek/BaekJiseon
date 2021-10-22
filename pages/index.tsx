@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Homeground from '../src/component/Home';
 
 import { GetServerSideProps, GetServerSidePropsContext } from 'next';

@@ -5,6 +5,7 @@ import Document, {
   NextScript,
   DocumentContext,
 } from "next/document";
+
 import { ServerStyleSheet } from "styled-components";
 
 class MyDocument extends Document {
@@ -43,8 +44,8 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          <script src="https://unpkg.com/aos@next/dist/aos.js" />
-          <script>AOS.init();</script>
+        
+          
           <Main />
           <NextScript />
         </body>

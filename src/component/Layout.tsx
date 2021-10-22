@@ -3,10 +3,11 @@ import Head from 'next/head'
 import React, { ReactChild, FC } from 'react'
 
 type Props = {
-	children: ReactChild
+	children: any,
+	
 }
 
-const Layout: FC<Props> = ({children} : string) => {
+const Layout: React.FC<Props> = ({children}) => {
 	return (
 		<>
 		
@@ -16,7 +17,7 @@ const Layout: FC<Props> = ({children} : string) => {
 		
 		
 		
-		<div key={children.id}>
+		<div>
 			{children}
 		</div>
 		</>
