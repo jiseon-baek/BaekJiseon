@@ -35,7 +35,7 @@ export default function Project() {
 	src: '/img/pp1.png'
         },
 	{ text: '🎵 Music Tag App' ,
-        description: '음악을 추천하고 공유하는 React기반 Music 웹사이트입니다. 포스트, 회원가입 및 로그인, 상세페이지 기능이 있습니다. DB를 다루는 방법과 CRUD를 구성하는 방법에 대해 배울 수 있었습니다.', 
+        description: '음악을 추천하고 공유하는 React기반 Music 클론코딩 웹사이트입니다. 포스트, 회원가입 및 로그인, 상세페이지 기능이 있습니다. DB를 다루는 방법과 CRUD를 구성하는 방법에 대해 배울 수 있었습니다.', 
         skills: '사용기술: React + Redux, Node, Express, MongoDB',
         link: 'https://music-tag-js100.netlify.app/posts',
         className: 'container_img project_two',
