@@ -14,6 +14,7 @@ const Layout: React.FC<Props> = ({children}) => {
 		
 		<Head>
         		<title>JS | Frontend Portfolio</title>
+			
       		</Head>
 		
 		
