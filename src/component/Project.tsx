@@ -85,7 +85,7 @@ export default function Project() {
 								<DivDescription>{project.description}</DivDescription>
 								<p className="p-2 bg-white rounded-full">{project.skills}</p>
 								<p><ProjectLink href={project.codeUrl}>Code: Github</ProjectLink></p>
-								<a href={project.link}><Img src={project.src} title="링크로 이동하기" width={500} height={280} className="p-3"></Img></a>
+								<a href={project.link} target="_blank" rel="noopener noreferrer"><Img src={project.src} title="링크로 이동하기" width={500} height={280} className="p-3" ></Img></a>
 								
 							</ContainerDiv>
 						</motion.div>
