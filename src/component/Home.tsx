@@ -6,7 +6,7 @@ import "tailwindcss/tailwind.css"
 export default function Home() {
 	return (
 		<>
-		<Homeground >
+		<Homeground>
 			<Homesvg data-aos="fade-up"
      data-aos-duration="3000" aria-label="home_svg"><Img src="/img/space.svg" width={400} height={400} alt="home-svg"/></Homesvg>
 			<Homegreeting data-aos="fade-down"

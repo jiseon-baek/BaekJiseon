@@ -58,7 +58,7 @@ export default function Aboutme() {
 								
 								</SkillContent>
 								<div className="flex justify-center w-full p-3 mt-4 text-lg bg-white" style={{fontFamily: 'Cafe24SsurroundAir', fontWeight: 'bold'}}>
-									<FaLightbulb className="mr-2"/> 경험해본 언어들: PHP, Jquery, Express
+									<FaLightbulb className="mr-2"/> 경험해본 언어들: PHP, Jquery
 								</div>
 							</div>
 							
@@ -227,7 +227,7 @@ const DescriptionH3 = styled.h3`
     	box-shadow: inset -1px -1px 1px 0 #707070;
 `;
 
-const DescriptionP = styled.p`
+const DescriptionP = styled.div`
 	font-family: 'Cafe24SsurroundAir';
 	padding:20px;
 	margin-bottom: 0;
