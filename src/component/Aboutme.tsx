@@ -90,7 +90,7 @@ const About = styled.section`
 	padding-top: 2%;
 	padding-bottom: 1%;
 `;
-const AboutTop = styled.div`
+const AboutTop = styled.title`
 	display:flex;
 	width: 70%;
 	text-align: center;

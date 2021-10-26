@@ -90,7 +90,7 @@ const ContactContainer = styled.div`
 
 `;
 
-const ContactTitle = styled.div`
+const ContactTitle = styled.title`
 	width: 70%;
 	display: flex;
 	margin: 0% auto;

@@ -131,7 +131,7 @@ const About = styled.section`
 	padding-top: 2%;
 	padding-bottom: 2%;
 `;
-const AboutTop = styled.div`
+const AboutTop = styled.title`
 	display:flex;
 	width: 70%;
 	text-align: center;
@@ -170,7 +170,7 @@ const AboutSkills = styled.div`
 	margin: 3% auto;
 `;
 
-const DescriptionTop = styled.div`
+const DescriptionTop = styled.title`
 	width: 80%;
 	height: 60px;
 	margin: 2% auto 0 auto;

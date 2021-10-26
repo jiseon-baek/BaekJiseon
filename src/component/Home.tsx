@@ -59,7 +59,7 @@ const shake = keyframes`
 	}
 `;
 
-const Homeground = styled.div`
+const Homeground = styled.section`
 	background-image: url(/img/home-bg.svg);
 	display: flex;
 	color: white;

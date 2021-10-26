@@ -123,7 +123,7 @@ const Projects = styled.section`
 	padding-bottom: 1%;
 `;
 
-const ProjectTop = styled.div`
+const ProjectTop = styled.title`
 	display:flex;
 	width: 70%;
 	text-align: center;
