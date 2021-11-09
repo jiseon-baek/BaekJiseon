@@ -37,16 +37,13 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="ko">
-        <Head> 
+        <Head>
           <link
-              href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-              rel="stylesheet"
-            />
-         
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+          />
         </Head>
         <body>
-        
-          
           <Main />
           <NextScript />
         </body>

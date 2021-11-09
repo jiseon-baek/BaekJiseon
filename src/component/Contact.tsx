@@ -13,45 +13,42 @@ import "tailwindcss/tailwind.css"
 const Contact = () => {
 	const content = {
 		inform: [
-			{ title: 'Mail', address: 'js.coding.place@gmail.com', index:1 },
-			{ title: 'Phone', address: '010-8584-7752', index:2 }
+			{ title: 'Mail', address: 'js.coding.place@gmail.com', index: 1 },
+			{ title: 'Phone', address: '010-8584-7752', index: 2 }
 		]
 	}
-	const contactIcon = {
-		width: '50px',
-	margin: 'auto 0'
-	}
+
 	return (
 		<>
 			<Contacts >
-				<ContactContainer >
+				<ContactContainer>
 					<ContactTitle>
-						<ContactTitleSpan><Img src="/img/nice3.svg" width={40} height={40}/>Contact</ContactTitleSpan>
-						
+						<ContactTitleSpan><Img src="/img/nice3.svg" width={40} height={40} />Contact</ContactTitleSpan>
+
 					</ContactTitle>
 					<ContactDiv className="p-10">
-						
-							<motion.div variants={fadeInUp} initial="initial" animate="animation">
-								{content.inform.map((inform) => (
-									<ContactInform key={inform.index}>
-										<ContactInformH3>{inform.title}</ContactInformH3>
-										<ContactInformP>{inform.address}</ContactInformP>
-									</ContactInform>
-								))}
-								<ContactInform>
-									<ContactInformH3>Github</ContactInformH3>
-									<ContactGit href="https://github.com/jiseon-baek"><FontAwesomeIcon icon={faGithub}/></ContactGit>
+
+						<motion.div variants={fadeInUp} initial="initial" animate="animation">
+							{content.inform.map((inform) => (
+								<ContactInform key={inform.index}>
+									<ContactInformH3>{inform.title}</ContactInformH3>
+									<ContactInformP>{inform.address}</ContactInformP>
 								</ContactInform>
-								<EmailButton onClick={() => window.open('mailto:js.coding.place@gmail.com')}>
-									Sending Mail
+							))}
+							<ContactInform>
+								<ContactInformH3>Github</ContactInformH3>
+								<ContactGit href="https://github.com/jiseon-baek"><FontAwesomeIcon icon={faGithub} /></ContactGit>
+							</ContactInform>
+							<EmailButton onClick={() => window.open('mailto:js.coding.place@gmail.com')}>
+								Sending Mail
 								</EmailButton>
-							</motion.div>
-						
+						</motion.div>
+
 
 					</ContactDiv>
 				</ContactContainer>
-				
-				
+
+
 			</Contacts>
 		</>
 	)
@@ -69,7 +66,7 @@ const EmailButton = styled.button`
 	background-color:#f0f0f0;
 	&:hover {
 		background: rgb(248,113,113);
-background: linear-gradient(90deg, rgba(248,113,113,1) 0%, rgba(251,191,36,1) 100%);
+	background: linear-gradient(90deg, rgba(248,113,113,1) 0%, rgba(251,191,36,1) 100%);
 		color:white;
 		
 	}
@@ -79,7 +76,6 @@ background: linear-gradient(90deg, rgba(248,113,113,1) 0%, rgba(251,191,36,1) 10
 
 const Contacts = styled.section`
 	background-image: url(/img/home-bg.svg);
-	
 	height: 100vh;
 	padding-top:9%;
 	text-align: center;

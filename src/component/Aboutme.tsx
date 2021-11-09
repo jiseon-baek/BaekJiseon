@@ -11,66 +11,65 @@ import "tailwindcss/tailwind.css"
 
 
 export default function Aboutme() {
-	
-	
-	
 	return (
-		
-			<About>
-				
-				<AboutTop>
-						<TopAndSkillsSpan><Img src="/img/nice3.svg" width={40} height={40}/>About Me</TopAndSkillsSpan>
-				</AboutTop>
-				
-				<AboutSkills>
-					
-					<DescriptionTop>
-						<DescriptionTopTextArea defaultValue='☺︎ Here are Skills I can use.' className="font-mono text-black"/>
-						
-							<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
-							<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
-							
-					</DescriptionTop>
-					
-					<AboutDescription>
-						<div style={{display:'flex',
-	justifyContent: 'center', width:'100%', fontFamily: 'Cafe24SsurroundAir'}}>
-							<div className="flex-grow p-4 text-black">
-								<h6 className="mt-4 mb-5 font-mono text-xl font-extrabold tracking-wide text-gray-700">Let Me Introduce Myself</h6>
-								<motion.div
-								 className="grid gap-6 text-black lg:grid-cols-2 "
-								 variants={stagger} initial="initial" animate="animation" 
-								 >
+
+		<About>
+
+			<AboutTop>
+				<TopAndSkillsSpan><Img src="/img/nice3.svg" width={40} height={40} />About Me</TopAndSkillsSpan>
+			</AboutTop>
+
+			<AboutSkills>
+
+				<DescriptionTop>
+					<DescriptionTopTextArea defaultValue='☺︎ Here are Skills I can use.' className="font-mono text-black" />
+
+					<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
+						<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
+
+				</DescriptionTop>
+
+				<AboutDescription>
+					<div style={{
+						display: 'flex',
+						justifyContent: 'center', width: '100%', fontFamily: 'Cafe24SsurroundAir'
+					}}>
+						<div className="flex-grow p-4 text-black">
+							<h6 className="mt-4 mb-5 font-mono text-xl font-extrabold tracking-wide text-gray-700">Let Me Introduce Myself</h6>
+							<motion.div
+								className="grid gap-6 text-black lg:grid-cols-2 "
+								variants={stagger} initial="initial" animate="animation"
+							>
 								{services.map((service) => (
 									<motion.div
-									 className="bg-gray-200 rounded-lg shadow-md lg:col-span-1"
-									 variants={fadeInUp}
-									 key={service.key}
-									 >
+										className="bg-gray-200 rounded-lg shadow-md lg:col-span-1"
+										variants={fadeInUp}
+										key={service.key}
+									>
 										<ServiceCard service={service} />
 									</motion.div>
 								))}
-								</motion.div>
-							</div>
+							</motion.div>
 						</div>
-						
-					</AboutDescription>
-					
-				</AboutSkills>
-				<AboutMe>
-					<AboutMeContent>
-						<h2>저는</h2>
-						<div className="content_top" >
-							<p><AboutMeContentSpan>도전</AboutMeContentSpan>을 즐기는 개발자</p>
-							<p>끊임없이 <AboutMeContentSpan>공부</AboutMeContentSpan>하고 <AboutMeContentSpan>성장</AboutMeContentSpan>하는 개발자</p>
-							<p><AboutMeContentSpan>팀워크</AboutMeContentSpan>를 중시하는 개발자</p>
-						</div>
-						<h2>입니다</h2>
-					</AboutMeContent>
-				</AboutMe>
-				
-				
-			</About>
+					</div>
+
+				</AboutDescription>
+
+			</AboutSkills>
+			<AboutMe>
+				<AboutMeContent>
+					<h2>저는</h2>
+					<div className="content_top" >
+						<p><AboutMeContentSpan>도전</AboutMeContentSpan>을 즐기는 개발자</p>
+						<p>끊임없이 <AboutMeContentSpan>공부</AboutMeContentSpan>하고 <AboutMeContentSpan>성장</AboutMeContentSpan>하는 개발자</p>
+						<p><AboutMeContentSpan>팀워크</AboutMeContentSpan>를 중시하는 개발자</p>
+					</div>
+					<h2>입니다</h2>
+				</AboutMeContent>
+			</AboutMe>
+
+
+		</About>
 	)
 }
 

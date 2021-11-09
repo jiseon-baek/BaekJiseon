@@ -7,7 +7,7 @@ import '../tailwind.css';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
-const MyApp:FunctionComponent<{ Component: any, pageProps: any}> = ({ Component, pageProps}) => {
+const MyApp: FunctionComponent<{ Component: any, pageProps: any }> = ({ Component, pageProps }) => {
 
   useEffect(() => {
     AOS.init({
@@ -19,28 +19,11 @@ const MyApp:FunctionComponent<{ Component: any, pageProps: any}> = ({ Component,
 
   return (
     <>
-          
-          <Navbar/>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-          
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   )
 }
-
-//function MyApp({ Component, pageProps }: AppProps) {
-  
-  //return (
-    //<>
-          
-          //<Layout>
-          //<Navbar/>
-            //<Component {...pageProps} />
-          //</Layout>
-          
-    //</>
-  //)
-//}
 
 export default MyApp
