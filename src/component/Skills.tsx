@@ -9,99 +9,98 @@ import Bar from './Bar';
 
 
 export default function Aboutme() {
-	
-	
+
+
 	return (
-		
-			<About>
-				
-				<AboutTop>
-						<TopAndSkillsSpan><Img src="/img/nice3.svg" width={40} height={40}/>Skills + ⍺</TopAndSkillsSpan>
-				</AboutTop>
-				
-				<AboutSkills>
-					
-					<DescriptionTop>
-						<DescriptionTopTextArea defaultValue='☺︎ Here are Skills I can use.' className="font-mono text-black"/>
-						
-							<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
-							<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
-							
-					</DescriptionTop>
-					
-					<AboutDescription>
-						
-						
 
-							<div className="w-11/12 gap-6 p-4 text-black " >
-								<SkillContent className="grid gap-6 p-4 bg-white rounded-3xl md:grid-cols-2">
-								<div className="w-full">
-									<h5 className="m-5 text-2xl font-bold " style={{fontFamily: 'Cafe24SsurroundAir', fontWeight: 'bold'}}>Languages & Framework</h5>
-									<div className="my-2">
-										{languages.map((Language) => (
-											<Bar data={Language} key={Language.name}/>
+		<About>
 
-										))}
-										
-									</div>
-								</div>
-								<div>
-									<h5 className="m-5 text-2xl font-bold " style={{fontFamily: 'Cafe24SsurroundAir', fontWeight: 'bold'}}>Tools</h5>
-									<div className="my-2">
-										{tools.map((tool) => (
-											<Bar data={tool} key={tool.name}/>
-							
-										))}
-										
-									</div>
-								</div>
-								
-								</SkillContent>
-								<div className="flex justify-center w-full p-3 mt-4 text-lg bg-white" style={{fontFamily: 'Cafe24SsurroundAir', fontWeight: 'bold'}}>
-									<FaLightbulb className="mr-2"/> 경험해본 언어들: PHP, Jquery
+			<AboutTop>
+				<TopAndSkillsSpan><Img src="/img/nice3.svg" width={40} height={40} />Skills + ⍺</TopAndSkillsSpan>
+			</AboutTop>
+
+			<AboutSkills>
+
+				<DescriptionTop>
+					<DescriptionTopTextArea defaultValue='☺︎ Here are Skills I can use.' className="font-mono text-black" />
+					<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
+						<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
+				</DescriptionTop>
+
+				<AboutDescription>
+
+
+
+					<div className="w-11/12 gap-6 p-4 text-black " >
+						<SkillContent className="grid gap-6 p-4 bg-white rounded-3xl md:grid-cols-2">
+							<div className="w-full">
+								<h5 className="m-5 text-2xl font-bold " style={{ fontFamily: 'Cafe24SsurroundAir', fontWeight: 'bold' }}>Languages & Framework</h5>
+								<div className="my-2">
+									{languages.map((Language) => (
+										<Bar data={Language} key={Language.name} />
+
+									))}
+
 								</div>
 							</div>
-							
-					</AboutDescription>
-					
-					
+							<div>
+								<h5 className="m-5 text-2xl font-bold " style={{ fontFamily: 'Cafe24SsurroundAir', fontWeight: 'bold' }}>Tools</h5>
+								<div className="my-2">
+									{tools.map((tool) => (
+										<Bar data={tool} key={tool.name} />
 
-				
-					<DescriptionTop>
-						<DescriptionTopTextArea defaultValue='☺︎ And other informations about me!' className="font-mono text-black"/>
-							<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
-							<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
-					</DescriptionTop>
-					<AboutDescription>
-						<motion.div variants={fadeInUp} initial="initial" animate="animation" style={{
-		justifyContent: 'center', width:'100%', background: 'white'}} className="grid lg:grid-cols-2">
-							<Description>
-								<DescriptionH3>Education</DescriptionH3>
-								
-									
-									<DescriptionP style={{ fontSize: '20px' }}>
-										<DescriptionSchool>
-											<Img src="/img/school.png" width={60} height={60} />
-											<div style={{ lineHeight: '30px', marginLeft: '10px'}} >
-											광운대학교 국제학부<br/>2016.03~2021.02
+									))}
+
+								</div>
+							</div>
+
+						</SkillContent>
+						<div className="flex justify-center w-full p-3 mt-4 text-lg bg-white" style={{ fontFamily: 'Cafe24SsurroundAir', fontWeight: 'bold' }}>
+							<FaLightbulb className="mr-2" /> 경험해본 언어들: PHP, Jquery
+								</div>
+					</div>
+
+				</AboutDescription>
+
+
+
+
+				<DescriptionTop>
+					<DescriptionTopTextArea defaultValue='☺︎ And other informations about me!' className="font-mono text-black" />
+					<Nice><Img src="/img/nice1.svg" width={20} height={20}></Img>
+						<Img src="/img/nice2.svg" width={20} height={20}></Img></Nice>
+				</DescriptionTop>
+				<AboutDescription>
+					<motion.div variants={fadeInUp} initial="initial" animate="animation" style={{
+						justifyContent: 'center', width: '100%', background: 'white'
+					}} className="grid lg:grid-cols-2">
+						<Description>
+							<DescriptionH3>Education</DescriptionH3>
+
+
+							<DescriptionP style={{ fontSize: '20px' }}>
+								<DescriptionSchool>
+									<Img src="/img/school.png" width={60} height={60} />
+									<div style={{ lineHeight: '30px', marginLeft: '10px' }} >
+										광운대학교 국제학부<br />2016.03~2021.02
 											</div>
-										</DescriptionSchool>
-									</DescriptionP>
-								
-							</Description>
-							<Description>
-								<DescriptionH3>Certificate</DescriptionH3>
-								<DescriptionP style={{ fontSize: '20px' }}>컴퓨터활용능력 1급<br/></DescriptionP>
-							</Description>
-							
-						</motion.div>
-					</AboutDescription>
-					
-				</AboutSkills>
-				
-				
-				
-			</About>
+								</DescriptionSchool>
+							</DescriptionP>
+
+						</Description>
+						<Description>
+							<DescriptionH3>Certificate</DescriptionH3>
+							<DescriptionP style={{ fontSize: '20px' }}>컴퓨터활용능력 1급<br /></DescriptionP>
+						</Description>
+
+					</motion.div>
+				</AboutDescription>
+
+			</AboutSkills>
+
+
+
+		</About>
 	)
 }
 
@@ -171,6 +170,7 @@ const AboutSkills = styled.div`
 `;
 
 const DescriptionTop = styled.title`
+	display:block;
 	width: 80%;
 	height: 60px;
 	margin: 2% auto 0 auto;
