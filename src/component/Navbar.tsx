@@ -1,7 +1,5 @@
-import React from 'react';
 import Link from 'next/link';
 import styled from "styled-components";
-import { useRouter } from "next/router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -17,53 +15,53 @@ const scrollData = [
 
 
 const Navbar = () => {
-	const router = useRouter();
-
 	return (
-		
-			<div>
-			
+
+		<div>
+
 			<NavScroll>
 				<NavbarContainer>
 					<Link href="/"><Navlogo>JS</Navlogo></Link>
-					
-					<Navgit href="https://github.com/jiseon-baek"><FontAwesomeIcon icon={faGithub}/></Navgit>
-					
-				
+
+					<Navgit href="https://github.com/jiseon-baek"><FontAwesomeIcon icon={faGithub} /></Navgit>
+
+
 				</NavbarContainer>
 				<aside>
-					<ul style={{display: 'flex',
-								flexDirection: 'column',
-								position: 'fixed',
-								right: '20px',
-								top:'40%',color:'white'}}>
-					{scrollData.map((scroll) => {
-						return (
-							<li key={scroll.id} style={{
-								width: '15px',
-							height: '15px',
-							margin: '20px 0',
-							transition: 'all 200ms ease',
-							backgroundColor: scroll.path == router.pathname ? 'rgb(203, 51, 76)' : 'white',
-							listStyle: 'none',
-							cursor: 'pointer'
-							
-							}}
-							>
-									
-										<Link href={scroll.path}><div style={{width:'20px', height:'20px'}}></div></Link>
-							</li>
+					<ul style={{
+						display: 'flex',
+						flexDirection: 'column',
+						position: 'fixed',
+						right: '20px',
+						top: '40%', color: 'white'
+					}}>
+						{scrollData.map((scroll) => {
+							return (
+								<li key={scroll.id} style={{
+									width: '15px',
+									height: '15px',
+									margin: '20px 0',
+									transition: 'all 200ms ease',
+									backgroundColor: scroll.path == router.pathname ? 'rgb(203, 51, 76)' : 'white',
+									listStyle: 'none',
+									cursor: 'pointer'
+
+								}}
+								>
+
+									<Link href={scroll.path}><div style={{ width: '20px', height: '20px' }}></div></Link>
+								</li>
 							)
-					})}
+						})}
 					</ul>
 				</aside>
-				
+
 			</NavScroll>
 
-			
 
-			</div>
-		
+
+		</div>
+
 	)
 }
 

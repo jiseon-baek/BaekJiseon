@@ -1,10 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
 import Img from 'next/image';
+import styled from 'styled-components';
+
 import { FaLightbulb } from 'react-icons/fa';
 import { motion } from "framer-motion";
 import { fadeInUp } from '../../animations';
 import { languages, tools } from '../../data';
+
 import Bar from './Bar';
 
 

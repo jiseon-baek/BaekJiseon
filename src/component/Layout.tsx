@@ -1,6 +1,3 @@
-
-import Head from 'next/head';
-import React, { ReactChild, FC } from 'react';
 import Navbar from './Navbar';
 import "tailwindcss/tailwind.css";
 
