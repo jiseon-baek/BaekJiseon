@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styled from "styled-components";
+import { useRouter } from "next/router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -15,6 +16,10 @@ const scrollData = [
 
 
 const Navbar = () => {
+	const router = useRouter();
+
+
+
 	return (
 
 		<div>
