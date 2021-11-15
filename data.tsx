@@ -12,7 +12,7 @@ import { IService, ISkill } from './type';
 export const services: IService[] = [
 	{
 		title: 'Character',
-		about: 	'긍적적이며 스트레스를 잘 받지 않는 성격으로, 다른 사람들에게 활기찬 에너지를 주는 것을 좋아합니다.',
+		about: '긍적적이며 스트레스를 잘 받지 않는 성격으로, 다른 사람들에게 활기찬 에너지를 주는 것을 좋아합니다.',
 		Icon: RiChatSmile2Line,
 		key: 1,
 	},
@@ -34,46 +34,46 @@ export const services: IService[] = [
 		Icon: RiEarthFill,
 		key: 4,
 	},
-	
 
-	
-	
+
+
+
 ]
 
 export const languages: ISkill[] = [
 	{
-		name:'HTML',
+		name: 'HTML',
 		level: '90%',
 		Icon: AiFillHtml5,
 	},
 	{
-		name:'CSS3',
+		name: 'CSS3',
 		level: '80%',
 		Icon: SiCss3,
 	},
 	{
-		name:'Javascript ES5,6+',
+		name: 'Javascript ES5,6+',
 		level: '70%',
 		Icon: IoLogoJavascript,
 	},
 	{
-		name:'Next.js',
+		name: 'Next.js',
 		level: '70%',
 		Icon: SiNextdotjs,
 	},
 	{
-		name:'React',
+		name: 'React',
 		level: '70%',
 		Icon: FaReact,
 	},
 	{
-		name:'Typescript',
+		name: 'Typescript',
 		level: '50%',
 		Icon: SiTypescript,
 	},
 
 	{
-		name:'SCSS',
+		name: 'SCSS',
 		level: '70%',
 		Icon: IoLogoSass,
 	}
@@ -81,20 +81,20 @@ export const languages: ISkill[] = [
 
 export const tools: ISkill[] = [
 	{
-		name:'Git',
+		name: 'Git',
 		level: '70%',
 		Icon: BiGitBranch,
 	},
 	{
-		name:'Slack',
+		name: 'Slack',
 		level: '70%',
 		Icon: IoLogoSlack,
 	},
 	{
-		name:'Figma',
+		name: 'Figma',
 		level: '60%',
 		Icon: FiFigma,
 	},
-	
-	
+
+
 ]

@@ -6,14 +6,14 @@ import "tailwindcss/tailwind.css"
 export default function Home() {
 	return (
 		<>
-		<Homeground>
-			<Homesvg data-aos="fade-up"
-     data-aos-duration="3000" aria-label="home_svg"><Img src="/img/space.svg" width={400} height={400} alt="home-svg"/></Homesvg>
-			<Homegreeting data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="2000">Welcome To JS's Space <Homehand>👋🏻</Homehand><br/><Homespan>항상 도전하고 성장하는 Front-end 개발자 '백지선'입니다</Homespan></Homegreeting>
-		</Homeground>
-		
+			<Homeground>
+				<Homesvg data-aos="fade-up"
+					data-aos-duration="3000" aria-label="home_svg"><Img src="/img/space.svg" width={400} height={400} alt="home-svg" /></Homesvg>
+				<Homegreeting data-aos="fade-down"
+					data-aos-easing="linear"
+					data-aos-duration="2000">Welcome To JS's Space <Homehand>👋🏻</Homehand><br /><Homespan>항상 도전하고 성장하는 Front-end 개발자 '백지선'입니다</Homespan></Homegreeting>
+			</Homeground>
+
 		</>
 	)
 }
@@ -63,11 +63,11 @@ const Homeground = styled.section`
 	background-image: url(/img/home-bg.svg);
 	display: flex;
 	color: white;
-	font-size: 50px;
+	font-size: 2rem;
 	font-family: 'Cafe24SsurroundAir';
 	flex-direction: column;
 	text-align:center;
-	margin: 20px;
+	margin: 2em;
 	justify-content: center;
 	height: 100vh;
 	margin:0;
@@ -76,7 +76,7 @@ const Homeground = styled.section`
 
 const Homesvg = styled.div`
 	margin: 0 auto;
-	width:430px;
+	width: 36rem;
 	z-index: 100;
 	object-fit: cover;
 	
@@ -84,19 +84,19 @@ const Homesvg = styled.div`
 `;
 
 const Homegreeting = styled.h5`
-	font-size: 32px;
+	font-size: 1.8rem;
 	margin:0;
 	//animation: ${float4} 2s ease;
 	//animation-fill-mode: forwards;
 `;
 
 const Homespan = styled.span`
-	font-size: 22px;
+	font-size: 1.4rem;
 	font-family: 'Cafe24SsurroundAir';
 `;
 
 const Homehand = styled.span`
-	font-size: 40px;
+	font-size: 1.4rem;
 	animation: ${shake} 3s ease infinite;
 	transform-origin: 70% 70%;
     	display: inline-block;

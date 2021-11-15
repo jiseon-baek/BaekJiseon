@@ -127,7 +127,7 @@ const ProjectTop = styled.title`
 const Span = styled.span`
 	display: flex;
 	justify-content: center;
-	font-size: 38px;
+	font-size: 2.4rem;
 	font-weight: bold;
 	animation: fade 500ms ease-in;
 	width: 40%;
@@ -200,7 +200,7 @@ const ContainerDiv = styled.div`
 	color: rgb(222, 60, 87);
     }
     h4 {
-	    font-size: 20px;
+	    font-size: 1.5rem;
 	    padding: 18px;
     }
     p { 
@@ -211,7 +211,7 @@ const ContainerDiv = styled.div`
 const DivDescription = styled.p`
 
 background-color: white;
-	padding: 10px;
+    padding: 10px;
     align-items: center;
     margin-top: 10px;
     font-size: 16px;

@@ -80,7 +80,7 @@ const Navgit = styled.a`
   	position: fixed;
 	top: 30px;
 	right: 30px;
-	font-size: 30px;
+	font-size: 2rem;
 	transition: all 200ms ease;
 	&:hover {
 		color: pink;
@@ -90,7 +90,7 @@ const Navlogo = styled.a`
   	position: fixed;
 	top: 30px;
 	left: 30px;
-	font-size: 30px;
+	font-size: 2rem;
 	margin:0;
 	border-bottom: 2px solid white;
 	transition: all 200ms ease;

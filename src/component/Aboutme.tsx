@@ -116,14 +116,14 @@ const AboutMeContent = styled.div`
 	justify-content: space-around;
 	padding: 20px 10px;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.2rem;
     border-top: 1px none #707070;
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
     background-color: #fff;
     box-shadow: inset 0 -1px 1px 0 #707070, inset -1px 0 1px 0 #707070, inset 1px 1px 1px 0 #707070;
     h2 {
-	    font-size:24px;
+	    font-size:1.4rem;
     }
     p { 
 	    padding: 4px 0 ;
@@ -131,7 +131,7 @@ const AboutMeContent = styled.div`
 `;
 
 const AboutMeContentSpan = styled.span`
-	font-size:20px;
+	font-size:1.3rem;
 	color: rgb(255, 124, 9);
 	font-weight: bold;
 `;
@@ -139,7 +139,7 @@ const AboutMeContentSpan = styled.span`
 const TopAndSkillsSpan = styled.span`
 	display: flex;
 	justify-content: center;
-	font-size: 38px;
+	font-size: 2.2rem;
 	font-weight: bold;
 	animation: fade 500ms ease-in;
 	width: 40%;

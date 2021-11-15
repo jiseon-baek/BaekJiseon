@@ -142,15 +142,10 @@ const AboutTop = styled.title`
 `;
 
 
-
-
-
-
 const TopAndSkillsSpan = styled.span`
 	display: flex;
 	justify-content: center;
-	
-	font-size: 38px;
+	font-size: 2.2rem;
 	font-weight: bold;
 	animation: fade 500ms ease-in;
 	width: 40%;
@@ -219,7 +214,7 @@ const Description = styled.div`
 const DescriptionH3 = styled.h3`
 	margin: 0 auto;
 	padding: 4px 0;
-	font-size: 30px;
+	font-size: 1.4rem;
 	color:rgb(43, 43, 43);
 	border-style: solid;
     	border-width: 1px;
